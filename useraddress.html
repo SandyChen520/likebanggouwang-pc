@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>收货地址</title>
+		<link rel="stylesheet" type="text/css" href="css/useraddress.css"/>
+	</head>
+	<body>
+		<div class="mbshop_container">
+            <!-- leftframe -->
+            <div class="mbshop_userCenterLeftNav">
+                <a href="index.html">
+                    <span class="mbshop_userCenterLeftMyBanggo" title="我的邦购">
+                        <b>我的邦购</b><br>
+                        <i>My BangGo</i>
+                    </span>
+                </a>
+	            <dl>
+					<dt>交易管理</dt>
+					<dd><a href="myorder.html">我的订单</a></dd>
+					<dd><a href="#">退换货预约</a></dd>
+				    <dd><a target="_blank" href="shopbag.html">我的购物袋</a></dd>
+				</dl>
+				<dl>
+					<dt>账户管理</dt>
+					<dd><a href="javascript:void(0)">我的积分</a></dd>
+					<dd><a href="javascript:void(0)">我的打折券</a></dd>
+					<dd><a href="javascript:void(0)">我的红包</a></dd>
+					<dd><a href="javascript:void(0)">我的邦购币</a></dd>
+					<dd><a href="javascript:void(0)">活动记录</a></dd>
+				</dl>
+				<dl>
+					<dt>个人应用管理</dt>
+					<dd><a href="collect.html">我的收藏夹</a></dd>
+					<dd><a href="#">我的消息</a></dd>
+					<dd><a href="#">我的咨询</a></dd>
+				</dl>
+				<dl>
+					<dt>个人信息管理</dt>
+					<dd><a href="#">个人资料</a></dd>
+					<dd><a href="useraddress.html" style = "color:#f00;">收货地址</a></dd>
+					<dd><a href="updatepwd.html">修改密码</a></dd>
+					<dd><a href="#">会员等级</a></dd>
+				</dl>            
+	        </div>
+	        <!--右边-->
+	        <div class="mbshop_userCenterRightCon AddressIndex">
+                <!-- top -->
+				<span class="mbshop_userCenterTopText">收货地址</span>
+				<div class="Csuccess">
+					<em class="Cicon icon_small"></em>您设置默认地址已成功！
+					<em class="btn btn_close" id="success_btn_close">关闭</em>
+				</div>
+				<!-- addressAdding -->
+				<div class="mbshop_userCenterInfoLayout">
+					<span class="mbshop_userCenterAddressInfoText">已保存的有效收货地址 （您已有收货地址 0 个，还可添加 9 个收货地址）</span>
+				        <a href="#" class="mbshop_btn_addBtn" title="新增收货地址">新增收货地址</a>
+				</div>
+				<!-- 地址列表 -->
+				<div class="mbshop_userCenterMyNewsList">
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tbody>
+							<tr>
+								<th>姓名</th>
+								<th>地址</th>
+								<th>手机/固话</th>
+								<th>邮编</th>
+								<th>设置默认地址</th>
+								<th>操作</th>
+							</tr>
+				        </tbody>
+					</table>
+				</div>
+	        </div>
+	    	<div class="mbshop_userCenterRightCon newAddressWindow">
+			    <!-- top -->
+			    <span class="mbshop_userCenterTopText">新增收货地址</span>
+			    <!-- addressAdding -->
+			    <div class="mbshop_userCenterTopInfo">增加收货地址 （带*号的为必填，固定电话、邮编为选题内容）</div>
+			    <!-- addressAdding -->
+			    <div class="mbshop_userCenterConFrame">
+			        <form action="/memberAddress/addAddress" onsubmit="return checkAddAddress();" method="post">
+			            <table cellpadding="0" cellspacing="0" border="0">
+			                <tbody>
+			                	<tr>
+				                    <td width="120"><font color="red">*</font> 收货人：</td>
+				                    <td><input type="text" name="consignee" id="sh_name" maxlength="10" value=""></td>
+				                </tr>
+				                <tr>
+				                    <td><font color="red">*</font> 所在地区：</td>
+				                    <td>
+				                        <!-- 三级联动 -->
+				                        <select id="province" name="province" onchange="region.changed(this,'city')">
+				                            <option value=""> --请选择-- </option>
+				                                                            <option value="2">北京</option>
+				                                                            <option value="3">天津</option>
+				                                                            <option value="4">河北省</option>
+				                                                            <option value="5">山西省</option>
+				                                                            <option value="6">内蒙古自治区</option>
+				                                                            <option value="7">辽宁省</option>
+				                                                            <option value="8">吉林省</option>
+				                                                            <option value="9">黑龙江省</option>
+				                                                            <option value="10">上海</option>
+				                                                            <option value="11">江苏省</option>
+				                                                            <option value="12">浙江省</option>
+				                                                            <option value="13">安徽省</option>
+				                                                            <option value="14">福建省</option>
+				                                                            <option value="15">江西省</option>
+				                                                            <option value="16">山东省</option>
+				                                                            <option value="17">河南省</option>
+				                                                            <option value="18">湖北省</option>
+				                                                            <option value="19">湖南省</option>
+				                                                            <option value="20">广东省</option>
+				                                                            <option value="21">广西壮族自治区</option>
+				                                                            <option value="22">海南省</option>
+				                                                            <option value="23">重庆</option>
+				                                                            <option value="24">四川省</option>
+				                                                            <option value="25">贵州省</option>
+				                                                            <option value="26">云南省</option>
+				                                                            <option value="27">西藏自治区</option>
+				                                                            <option value="28">陕西省</option>
+				                                                            <option value="29">甘肃省</option>
+				                                                            <option value="30">青海省</option>
+				                                                            <option value="31">宁夏回族自治区</option>
+				                                                            <option value="32">新疆维吾尔自治区</option>
+				                                                            <option value="33">台湾省</option>
+				                                                            <option value="34">香港特别行政区</option>
+				                                                            <option value="35">澳门特别行政区</option>
+				                                                    </select>
+				                        <select id="city" name="city" onchange="region.changed(this,'zone')">
+				                            <option value=""> --请选择-- </option>
+				                        </select>
+				                        
+				                        <select id="zone" name="zone">
+				                        	<option value=""> --请选择-- </option>
+				                        </select>
+				                    </td>
+				                </tr>
+				                <tr>
+				                    <td><font color="red">*</font> 详细地址：</td>
+				                    <td><input type="text" name="detail_address" value="" id="sh_detail" maxlength="70"></td>
+				                </tr>
+				                <tr>
+				                    <td><font color="red">*</font> 手机号码：</td>
+				                    <td>
+				                        <input type="text" name="apply_mobile" id="sh_mobile" maxlength="11" value="">
+				                       	 或 固定电话：
+				                        <input type="text" name="apply_telpone" id="sh_telpone" maxlength="16" value="">
+				                    </td>
+				                </tr>
+				                <tr>
+				                    <td valign="top">邮箱：</td>
+				                    <td>
+				                        <input type="hidden" name="is_employees" value="">
+				                        <input type="hidden" name="YII_CSRF_TOKEN" value="915db02ebdbd7811ffcf629399ca5430d80e4d81">
+				                        <input name="apply_email" id="sh_email" maxlength="60" value=""> <p>用来接收订单提醒邮件，便于您及时了解订单状态</p>
+				                    </td>
+				                </tr>
+				                <tr>
+				                    <td valign="top">邮编：</td>
+				                    <td>
+				                        <input name="apply_zipcode" id="sh_zipcode" maxlength="6" value="">
+				                    </td>
+				                </tr>
+				                <tr>
+			                        <td>是否设为默认地址：</td>
+			                        <td>
+			                            <input name="defaultAddress" checked="true" type="radio" value="1"> 是
+			                            <input name="defaultAddress" type="radio" value="0"> 否
+			                        </td>
+			                    </tr>
+				                <tr>
+				                    <td>&nbsp;</td>
+				                    <input type="hidden" name="address_id" value="">
+				                    <td><input type="submit" style="border:none;cursor:pointer" value="确认信息" class="mbshop_userCenterBtnConfirm"></td>
+				                </tr>
+			            	</tbody>
+			            </table>
+			        </form>
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>

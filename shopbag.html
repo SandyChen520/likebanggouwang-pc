@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物袋</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopbag.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/shopbag.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="headtop"></div>
+		<div id="header">
+			<div class = "headerlogoline-wrap">
+				<div class="headerlogowrap-top">
+					<div id="logo">
+						<a href="index.html"><img src="img/mbshop_new_logo2.png" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mbshop_flowHead">
+			<div class="mbshop_flowHeadContent">
+	            <span class="mbshop_orderFlowstep1" title="订单流程——加入购物袋->填写订单信息->成功提交订单"></span>
+	        </div>
+		</div>
+        <div class="mbshop_cart_tab_up">
+			<i>我的购物袋</i>
+			<em>满99包邮</em>
+		</div>
+		<!--购物袋为空时显示-->
+		<div class="mbshop_cart_warp_box00">
+			<div id="cartEmpty" class="mbshop_container" style="display:block;">
+				<div class="mbshop_cartico"></div>
+				<div class="mbshop_cartnone">
+					<b>您的购物袋还是空的，赶紧行动吧！您可以：</b><br>
+					马上去 <a href="index.html">挑选商品</a>，或查看
+					<a href="javascript:void(0)" class = "mbshop_cartnone_collect">我的收藏夹</a><br>
+					您可能还未登录导致购物袋的商品无法显示，马上 
+					<a href="login.html">登录</a>
+				</div>
+			</div>	
+		</div>
+		<!--购物袋不为空时显示-->
+		<div class="mbshop_cart_warp_box">
+			<ol name="tag" class="mbshop_cart_tab">
+				<li class="mbshop_cart_01">
+					<input name="checkAll" type="checkbox"/> <i>全选</i> 
+				</li>
+				<li class="mbshop_cart_02">商品信息</li>
+				<li class="mbshop_cart_03">颜色尺码</li>
+				<li class="mbshop_cart_04">单价(元)</li>
+				<li class="mbshop_cart_05">数量</li>
+				<li class="mbshop_cart_06">优惠(元)</li>
+				<li class="mbshop_cart_07">成交价</li>
+				<li class="mbshop_cart_08">状态</li>
+				<li class="mbshop_cart_09">操作</li>
+			</ol>
+			<div class="mbshop_cart_single_warp_box">
+				<!-- 赠品，优惠等标签所在盒子 -->
+				<div class="mbshop_cart_single_label">
+					<div class="mbshop_cart_single_label_00">
+						<!-- 标签 红底的 -->
+						<span class="mbshop_cart_single_label_01"> 赠品 </span>
+					</div>
+					<div class="mbshop_cart_single_label_ex">
+						<p> <i>再买21.0元,即可选赠品1件</i> </p>
+					</div>
+				</div>
+			</div>
+			<div class="mbshop_cart_single_warp_box">
+				<!-- 赠品，优惠等标签所在盒子 -->
+				<div class="mbshop_cart_single_label">
+					<div class="mbshop_cart_single_label_00">
+						<!-- 标签 红底的 -->
+						<span class="mbshop_cart_single_label_01"> 满减 </span>
+					</div>
+					<div class="mbshop_cart_single_label_ex">
+						<p> <i><a href="javascript:void(0)">已满319.0元,已减50.0元;再买21.0元,即可减100.0元</a></i> </p>
+					</div>
+				</div>
+				<!-- 此处，一个 UL 盒子，是一个商品 动态生成-->
+			
+			</div>
+			<div class="go_to_balance_warp">
+				<div class="go_to_balance" style="position: inherit;">
+					<div class="go_to_balance_left">
+						<input name="checkAll" type="checkbox" checked="true" />
+						<p id="deleteCheckbox" class="go_to_balance_left_del">删除选中商品</p>
+						<p id="cleanError" class="go_to_balance_left_clean">清除失效商品</p>
+						<p class="go_to_balance_left_total">合计(不含运费)：<i>0</i></p>
+						<p class="go_to_balance_left_alg">商品总价&nbsp;<i>0</i> - 优惠&nbsp;<em>0</em></p>
+						<p class="go_to_balance_left_have">已选商品<em>0</em>件</p>
+					</div>
+					<a href="#" class="go_to_balance_right mbshop_cartPayBill">去结算</a>
+				</div>
+			</div>
+		</div>
+		<!--弹出框-->
+		<div class="veo_pop_warp">
+			<div class="veo_pop">
+				<p id="pop_message">对不起，数量最少为1件</p>
+				<div class="veo_pop_btn"><span class="close_pop close_motai">确定</span>
+					<!--信息提示框-->
+					<span class="btn_one">确定</span><span class="btn_two close_motai">取消</span>
+				</div>
+				<!-- 关闭按钮 -->
+				<img class="close_motai" src="img/usercenterImg/Veo_double11_wap_pop_goods_close_grey.png" alt="">
+			</div>
+		</div>
+		
+		
+		<div id="bottom"></div>
+		<div id="footer"></div>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shopbagCreate.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

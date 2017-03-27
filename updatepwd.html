@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改密码</title>
+		<link rel="stylesheet" type="text/css" href="css/updatepwd.css"/>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.autocomplete.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-migrate-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/updatepwd.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="headtop"></div>
+		<div id="header"></div>
+		<div class="mbshop_container">
+            <!-- leftframe -->
+            <div class="mbshop_userCenterLeftNav">
+                <a href="index.html">
+                    <span class="mbshop_userCenterLeftMyBanggo" title="我的邦购">
+                        <b>我的邦购</b><br>
+                        <i>My BangGo</i>
+                    </span>
+                </a>
+	            <dl>
+					<dt>交易管理</dt>
+					<dd><a href="myorder.html">我的订单</a></dd>
+					<dd><a href="#">退换货预约</a></dd>
+				    <dd><a target="_blank" href="shopbag.html">我的购物袋</a></dd>
+				</dl>
+				<dl>
+					<dt>账户管理</dt>
+					<dd><a href="javascript:void(0)">我的积分</a></dd>
+					<dd><a href="javascript:void(0)">我的打折券</a></dd>
+					<dd><a href="javascript:void(0)">我的红包</a></dd>
+					<dd><a href="javascript:void(0)">我的邦购币</a></dd>
+					<dd><a href="javascript:void(0)">活动记录</a></dd>
+				</dl>
+				<dl>
+					<dt>个人应用管理</dt>
+					<dd><a href="collect.html">我的收藏夹</a></dd>
+					<dd><a href="#">我的消息</a></dd>
+					<dd><a href="#">我的咨询</a></dd>
+				</dl>
+				<dl>
+					<dt>个人信息管理</dt>
+					<dd><a href="#">个人资料</a></dd>
+					<dd><a href="useraddress.html">收货地址</a></dd>
+					<dd><a href="updatepwd.html">修改密码</a></dd>
+					<dd><a href="#">会员等级</a></dd>
+				</dl>            
+	        </div>
+	        <!--右侧-->
+	        <div class="mbshop_userCenterRightCon">
+                <!-- top -->
+				<span class="mbshop_userCenterTopText">修改密码</span>
+				<div class="Csuccess" style="display:none">
+					<em class="Cicon icon_small"></em>您的密码已修改成功！
+					<em class="btn btn_close" id="success_btn_close">关闭</em>
+				</div>
+				<!-- changePwd -->
+				<div class="mbshop_userCenterConFrame">
+					<form action="" method="post" id="formModifyPwd" name="formModifyPwd">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tbody>
+								<tr>
+									<td width="80">旧密码：</td>
+									<td>
+										<input id="opassword" name="opassword" type="password">
+										<div class="infoarea">
+											<span class="tips">请输入密码</span>
+											<span class="errorinfo" id="result_error"></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>新密码：</td>
+									<td>
+										<input id="password_formModifyPwd" name="password" type="password">
+										<div class="infoarea">
+											<span class="tips">请输入新密码，新旧密码不能相同</span>
+											<span class="errorinfo" id="newpwdresult_error"></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>确认密码：</td>
+									<td>
+										<input id="repassword" name="repassword" type="password">
+										<div class="infoarea">
+											<span class="tips">再次输入新密码</span>
+											<span class="errorinfo" id = "renewpwdresult_error"></span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td><a id="sub" class="mbshop_userCenterBtnConfirm" href="javascript:;" title="确认修改">确认修改</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+	        </div>
+       </div>
+       <div id="bottom"></div>
+       <div id="footer"></div>
+	</body>
+</html>

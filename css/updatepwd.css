@@ -1,0 +1,219 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+body {
+    font-family: "微软雅黑","黑体","宋体",verdana,"Helvetica Neue", Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    margin: 0;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    display: block;
+}
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.shopmenu .shopmenu-wrap{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mbshop_container {
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px
+}
+/*左边*/
+.mbshop_userCenterLeftNav {
+    width: 138px;
+    border: 1px #ccc solid;
+    padding: 0 20px 15px 20px;
+    margin-right: 20px;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterLeftNav .mbshop_userCenterLeftMyBanggo {
+    width: 100%;
+    padding: 10px 0;
+    float: left;
+    display: block;
+    border-bottom: 1px #ccc solid;
+}
+.mbshop_userCenterLeftNav .mbshop_userCenterLeftMyBanggo b {
+    font: bold 14px "微软雅黑","黑体","宋体",verdana;
+}
+.mbshop_userCenterLeftNav .mbshop_userCenterLeftMyBanggo i {
+    font: normal 12px "微软雅黑","黑体","宋体",verdana !important;
+    color: #999;
+}
+.mbshop_userCenterLeftNav dl {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterLeftNav dl dt {
+    width: 100%;
+    font: bold 12px "微软雅黑","黑体","宋体",verdana;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterLeftNav dl dd {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterLeftNav dl dd a {
+    font: normal 12px "微软雅黑","黑体","宋体",verdana;
+    color: #666;
+}
+.mbshop_userCenterLeftNav dl dd a:hover {
+    color: #f00;
+}
+/*右边*/
+.mbshop_userCenterRightCon {
+    width: 1000px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterTopText {
+    padding-top: 10px;
+    width: 100%;
+    float: left;
+    display: block;
+    font: bold 12px "微软雅黑","黑体","宋体",verdana;
+    padding-bottom: 10px;
+    border-bottom: 1px #ccc solid;
+}
+.mbshop_userCenterConFrame {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    height: auto;
+    float: left;
+    display: block;
+}
+form {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+tbody{
+	vertical-align: middle;
+}
+table tbody td {
+    text-align: center;
+    padding: 6px;
+    color: #333;
+    vertical-align: inherit;
+    }
+.mbshop_userCenterConFrame table tr td {
+    text-align: left;
+    font-size:12px;
+    border:0;
+}
+.mbshop_userCenterConFrame table tr td input{
+	vertical-align: middle;
+    border: 1px solid #b0b0b0;
+    padding: 2px 5px;
+    outline: none;
+    float: left;
+}
+.mbshop_userCenterConFrame table tr td:first-child {
+    text-align: right;
+}
+
+.mbshop_userCenterBtnConfirm {
+    width: auto;
+    height: auto;
+    background-color: #f8584f;
+    font: normal 12px "微软雅黑","黑体","宋体",verdana;
+    float: left;
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.mbshop_userCenterConFrame table tr td span {
+    float: left;
+    display: block;
+    width: 100%;
+}
+.tips {
+    background-color: #ec971f;
+    border: 1px #d58512 solid;
+    color: #fff;
+    margin: 2px 0 0 10px;
+    padding: 1px 5px;
+    width: auto ;
+}
+.infoarea{
+	margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    float: left;
+    display: block;
+}
+.errorinfo {
+    color: #f00;
+    margin: 2px 0 0 10px;
+    padding: 1px 5px;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,490 @@
+@charset "utf-8";
+.shopmenu-wrap{
+	display: none;
+}
+div, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    display: block;
+}
+body {
+    font-family: "微软雅黑","宋体",verdana, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    margin: 0;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+button, input, textarea {
+    outline: none;
+}
+
+
+
+
+.mbshop_listBreadNav {
+    width: 100%;
+}
+.mbshop_breadNav {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+    height: auto;
+    font: normal 12px "微软雅黑","宋体",verdana;
+    clear: both;
+}
+
+/*分类*/
+.mbshop_searchFrame {
+    width: 1200px;
+    height: auto;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    position: relative;
+}
+.mbshop_searchOption {
+    width: 1198px;
+    height: auto;
+    float: left;
+    display: block;
+    padding-bottom: 20px;
+    /*margin-bottom: 15px;*/
+    margin-top: 10px;
+    border: 1px #ccc solid;
+    height: auto !important;
+    padding-bottom: 10px !important;
+}
+.mbshop_searchItem {
+    width: 1158px;
+    float: left;
+    margin: 10px 0 0 20px;
+}
+.mbshop_searchItem span {
+    width: 50px;
+    float: left;
+    border-right: 1px #ccc solid;
+}
+.mbshop_searchItemContent {
+    width: 1038px;
+    height: 21px;
+    float: left;
+    overflow-y: hidden;
+}
+.mbshop_searchItemContent a {
+    width: auto;
+    float: left;
+    display: block;
+    margin: 0 0 10px 20px;
+    padding: 0;
+}
+.mbshop_searchItemContent a i, .mbshop_searchFilLink a i {
+    font: normal 12px "微软雅黑","黑体","宋体",verdana;
+    float: left;
+    text-transform: capitalize;
+}
+.mbshop_searchMore {
+     display: none; 
+}
+
+.new_mbshop_pricequjian {
+    width: auto;
+    height: auto;
+    color: #CCC;
+    margin-left: 40px;
+    float: left;
+}
+
+.new_mbshop_pricequjian input[type="text"] {
+    width: 35px;
+    height: 13px;
+    color: #333;
+    text-align: center;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+}
+.new_mbshop_pricequjian b {
+    font-weight: normal;
+    float: left;
+    padding: 0 5px;
+}
+.new_mbshop_pricequjian input[type="button"] {
+    width: 45px;
+    height: 19px;
+    border: 1px #CCC solid;
+    color: #000;
+    background-color: #F5F5F5;
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+/*颜色*/
+.mbshop_searchItemshuxing {
+    width: 1158px;
+    float: left;
+    margin: 10px 0 0 20px;
+}
+.mbshop_searchItemshuxing span:first-child {
+    margin-left: 0;
+}
+.mbshop_searchItemshuxing span {
+    width: auto;
+    float: left;
+    margin: 0 26px 0 55px;
+    padding-top: 4px;
+}
+.mbshop_new_searchItemOption {
+    float: left;
+    display: block;
+    width: auto;
+    height: 30px;
+    position: relative;
+}
+.mbshop_new_searchItemOption_menu {
+    width: 55px;
+    height: auto;
+    padding: 3px 25px 2px 10px;
+    /*padding: 2px 25px 2px 10px\9;*/
+    float: left;
+    display: block;
+    background: url(../img/usercenterImg/Veo_mbshop_spirit_pic.png) 73px -66px no-repeat;
+    /*background: url(../img/usercenterImg/mbshop_bottom_guide.png) no-repeat 73px 10px;*/
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    border: 1px #B5B5B5 solid;
+    border-radius: 3px;
+    
+}
+.mbshop_new_searchItemOption_menu-hover {
+    background: url(../img/usercenterImg/mbshop_bottom_guide.png) no-repeat 73px 10px;
+    border-bottom: none;
+    /*box-shadow:-5px 0 5px #ccc,5px 0 5px #ccc,0 -5px 5px #fff,0 5px 5px #ccc;*/
+    webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+.mbshop_new_searchItemOption_menu i {
+    font-style: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden !important;
+    width: 55px !important;
+    float: left;
+}
+
+.mbshop_new_searchItemOption_menu em {
+    width: 90px;
+    height: 10px;
+    background-color: #fff;
+    bottom: -5px;
+    position: absolute;
+    z-index: 20;
+    left: 0px;
+    display: none;
+}
+.mbshop_new_searchItemOption_box {
+    display: none;
+    position: absolute;
+    width: 360px;
+    height: auto;
+    padding: 10px;
+    padding-top: 5px;
+    border: 1px #B5B5B5 solid;
+    background-color: #fff;
+    z-index: 5;
+    top: 23px;
+    webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.mbshop_new_searchItemOption_box a {
+    float: left;
+    display: block;
+    width: 90px;
+    margin-top: 5px;
+    padding: 3px 0;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.mbshop_new_searchItemOption_box a b {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px #ccc solid;
+    margin-top: -2px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.newbgcolorblock_03 {
+    background-color: #b25d25;
+}
+.newbgcolorblock_11 {
+    background-color: #0068b7;
+}
+.newbgcolorblock_06 {
+    background-color: #ffffff;
+}
+.newbgcolorblock_05 {
+    background-color: #808080;
+}
+.newbgcolorblock_09 {
+    background-color: #f400a1;
+}
+.newbgcolorblock_13 {
+    background-color: #000000;
+}
+.newbgcolorblock_12 {
+    background-color: #fff143;
+}
+.newbgcolorblock_02 {
+    background-color: #f2ecde;
+}
+.newbgcolorblock_10 {
+    background-color: #22ac38;
+}
+.newbgcolorblock_07 {
+    background-color: #8d4bbb;
+}
+.newbgcolorblock_04 {
+    background-color: #fa8c35;
+}
+.newbgcolorblock_01 {
+    background-color: #f2ecde;
+}
+.mbshop_new_searchItemOption_all {
+    clear: left;
+}
+/*销量等列表*/
+.mbshop_pdFilter {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    margin-top: 15px;
+}
+.mbshop_pdFilterItem{
+	float:left;
+	
+}
+.mbshop_pdFilterItem a {
+    width: auto;
+    height: auto;
+    float: left;
+    display: block;
+    border-right: 2px #fff solid;
+    margin: 0;
+    padding: 10px 25px;
+}
+.mbshop_pdFilterItem .mbshop_pdFilterHover {
+    background-color: #F8584F;
+    color: #fff;
+}
+.mbshop_pdFilterItem .mbshop_pdFilterClick {
+    background-color: #F8584F;
+    color: #fff;
+}
+.mbshop_pdFilterUp {
+    background: url("../img/usercenterImg/mbshop_arrangeUpDown1.png") no-repeat right 0;
+}
+.mbshop_pdFilterUp_hover {
+	background: url(../img/usercenterImg/mbshop_arrangeUpDown1_1.png) no-repeat right 0;
+}
+.mbshop_pdFilterUp_click {
+	background: url(../img/usercenterImg/mbshop_arrangeUpDown1_1.png) no-repeat right 0;
+}
+.mbshop_pdPaginationTop {
+    float: right;
+    width: auto;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.mbshop_pdPaginationAct {
+    float: left;
+    width: auto;
+    padding: 1px 15px 0 15px;
+}
+.mbshop_pdPaginationAct a {
+    font: normal 12px "微软雅黑","宋体",verdana;
+    width: 30px;
+    height: 30px;
+}
+.mbshop_pdPaginationShowPd {
+    width: auto;
+    float: left;
+}
+.mbshop_pdPaginationShowPd label {
+    width: auto;
+    cursor: default;
+}
+.mbshop_pdPaginationShowPd label input{
+    margin: 3px 3px 3px 4px;
+    vertical-align: middle;
+}
+/*列表内容*/
+.mbshop_pdList {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.mbshop_listPdBox {
+    width: 1220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.mbshop_listPdCon {
+    width: 285px;
+    height: auto;
+    float: left;
+    display: block;
+    margin: 15px 20px 0 0;
+    position: relative;
+}
+.mbshop_listPdImg {
+    width: 285px;
+    margin-bottom: 5px;
+    float: left;
+    display: block;
+}
+.mbshop_listPdImg img {
+    width: 285px;
+    height: 390px;
+    display: block;
+    border: none;
+}
+.mbshop_listPdText {
+    width: 285px;
+    height: 20px;
+    overflow: hidden;
+    float: left;
+    display: block;
+    font: normal 14px "微软雅黑","宋体",verdana;
+    text-transform: uppercase;
+}
+.mbshop_new_jx_frameText2 {
+    height: 15px !important;
+    text-align: center;
+    margin-top: -3px;
+    text-transform: uppercase;
+    padding: 7px 0 6px 0 ;
+    font: normal 14px "微软雅黑","宋体","verdana";
+    overflow-y: hidden;
+}
+.mbshop_listPdText em {
+    font: normal 12px "微软雅黑","宋体",verdana;
+    color: #fff;
+    float: right;
+    padding: 3px 8px;
+    background-color: #D31B19;
+    max-width: 80px;
+    max-height: 13px;
+    overflow: hidden;
+    line-height: 120%;
+}
+.mbshop_listPdText b {
+    font: bold 14px "微软雅黑","宋体",verdana;
+}
+.mbshop_listPdText i {
+    margin-left: 10px;
+    font: normal 14px "微软雅黑","宋体",verdana;
+    text-decoration: line-through;
+}
+.mbshop_listPdColorFrame {
+    width: 285px;
+    margin-top: 8px;
+    height:auto;
+    float: left;
+    display: block;
+}
+.mbshop_listPdColorFrame .mbshop_listPdColorScroll {
+    width: 225px;
+    height: 30px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.mbshop_listPdColorFrame .mbshop_listPdColorScroll .mbshop_listPdColor {
+    width: 1000px;
+    position: absolute;
+}
+.mbshop_listPdColorFrame .mbshop_listPdColorScroll .mbshop_listPdColor a {
+    width: 28px;
+    height: 28px;
+    float: left;
+    display: block;
+    margin-right: 9px;
+    border: 1px #ccc solid;
+}
+.mbshop_listPdColorFrame .mbshop_listPdColorScroll .mbshop_listPdColor a:hover {
+    border: 1px #f00 solid;
+}
+.mbshop_listPdColorFrame .mbshop_listPdColorScroll .mbshop_listPdColor a img {
+    width: 28px;
+    height: 28px;
+    display: block;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/*12345下一页*/
+
+.mbshop_container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.mbshop_publicPagination {
+    height: auto;
+    position: relative;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    width: 384px;
+    margin: 35px auto 0px;
+}
+.mbshop_publicPagination a {
+    margin: 0;
+    border: 1px solid #e9e9e9;
+    background-color: #fff;
+    padding: 5px 10px;
+    height: auto;
+    color: #696969;
+    margin-left: 8px;
+    float: left;
+    display: block;
+}
+.mbshop_publicPagination a:hover {
+   
+    background-color: #fff;
+   	color: #f8584f;
+    border: 1px solid #f8584f;
+}
+.mbshop_publicPagination .currentPage {
+    background-color: #FFD;
+    color: #f8584f;
+    border: 1px solid #f8584f;
+}
+
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myorder.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.autocomplete.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-migrate-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/myorder.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="headtop"></div>
+		<div id="header"></div>
+		<div class="mbshop_container">
+            <!-- leftframe -->
+            <div class="mbshop_userCenterLeftNav">
+                <a href="index.html">
+                    <span class="mbshop_userCenterLeftMyBanggo" title="我的邦购">
+                        <b>我的邦购</b><br>
+                        <i>My BangGo</i>
+                    </span>
+                </a>
+	            <dl>
+					<dt>交易管理</dt>
+					<dd><a href="myorder.html" style = "color: #f00">我的订单</a></dd>
+					<dd><a href="#">退换货预约</a></dd>
+				    <dd><a target="_blank" href="shopbag.html">我的购物袋</a></dd>
+				</dl>
+				<dl>
+					<dt>账户管理</dt>
+					<dd><a href="javascript:void(0)">我的积分</a></dd>
+					<dd><a href="javascript:void(0)">我的打折券</a></dd>
+					<dd><a href="javascript:void(0)">我的红包</a></dd>
+					<dd><a href="javascript:void(0)">我的邦购币</a></dd>
+					<dd><a href="javascript:void(0)">活动记录</a></dd>
+				</dl>
+				<dl>
+					<dt>个人应用管理</dt>
+					<dd><a href="collect.html">我的收藏夹</a></dd>
+					<dd><a href="#">我的消息</a></dd>
+					<dd><a href="#">我的咨询</a></dd>
+				</dl>
+				<dl>
+					<dt>个人信息管理</dt>
+					<dd><a href="#">个人资料</a></dd>
+					<dd><a href="useraddress.html">收货地址</a></dd>
+					<dd><a href="updatepwd.html">修改密码</a></dd>
+					<dd><a href="#">会员等级</a></dd>
+				</dl>            
+	        </div>
+	        <!--右边-->
+	        <div class="mbshop_userCenterRightCon">
+                <!-- top -->
+                <div class="myorder1">
+					<span class="mbshop_userCenterTopText">我的订单 &gt; 订单号<label id="lbl_orde_sn">160305401176</label></span>
+					<div class="mbshop_userCenterTopInfo mbshop_userCenterTopSpecial">
+					    <span class="mbshop_userCenterOrderDetailInfoText1">
+					        订单编号：<strong>160305401176</strong>
+					        支付金额：<b>219.00</b> 元
+					    </span>
+					    <span class="mbshop_userCenterOrderDetailInfoText2">
+					        <p class = "dengdai">状态：等待付款</p>
+				            <p><a href="javascript:void(0)" target="_blank">立即付款</a></p>
+				            <p><a class="mbshop_userCenterOrderDetailBtnCancel" href="javascript:void(0);">取消订单</a></p>
+					    </span> 
+					    <span class="mbshop_userCenterOrderDetailInfoText3">
+					                请您在下单 半小时内 完成本次交易的付款，否则订单将逾期自动关闭。
+					        <!--您的订单已关闭，如仍需购买，请返回商品详情重新下单。-->
+					    </span>
+					</div>
+				</div>
+				<!--我的订单-->
+				<div class="myorder"   style = "display: none;">
+					<span class="mbshop_userCenterTopText">我的订单</span>
+					<div class="mbshop_userCenterTopInf">
+						暂无订单
+					</div>
+				</div>
+				
+ 			</div>
+	    </div>
+	    <div id="bottom"></div>
+	    <div id="footer"></div>
+	</body>
+</html>

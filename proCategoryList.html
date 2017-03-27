@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>列表页</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css"/>
+		<link rel="stylesheet" type="text/css" href="css/proCategoryList.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.autocomplete.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-migrate-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/proCategoryList.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="headtop"></div>
+		<div id="header"></div>
+		<!--面包屑导航 所有分类-->
+		<div class="mbshop_listBreadNav">
+            <div class="mbshop_breadNav">
+                <!--面包屑导航-->
+                    <a href="index.html">首页</a> &gt; 
+                    <a href="proCategoryList.html">16春新品</a>
+            </div>
+            <div class="mbshop_searchFilLink">
+			</div>
+        </div>
+		<!--分类-->
+		<div class="mbshop_searchFrame">
+	
+			<div class="mbshop_searchOption" style="height: 50px;">
+				<!-- category -->
+				<div class="mbshop_searchItem">
+					<span>分类</span>
+					<div class="mbshop_searchItemContent">
+						<a id="cate21" href="proCategoryList.html" alt="T恤"><i>T恤</i></a>
+						<!-- .'('.$v['count'].')' -->
+						<a id="cate22" href="proCategoryList.html" alt="衬衫"><i>衬衫</i></a>
+						<!-- .'('.$v['count'].')' -->
+						<a id="cate23" href="proCategoryList.html" alt="裤装"><i>裤装</i></a>
+						<!-- .'('.$v['count'].')' -->
+						<a id="cate24" href="proCategoryList.html" alt="毛衣"><i>毛衣</i></a>
+						<!-- .'('.$v['count'].')' -->
+						<a id="cate25" href="proCategoryList.html" alt="裙类"><i>裙类</i></a>
+						<!-- .'('.$v['count'].')' -->
+						<a id="cate26" href="proCategoryList.html" alt="外套"><i>外套</i></a>
+						<!-- .'('.$v['count'].')' -->
+						<a id="cate27" href="proCategoryList.html" alt="卫衣"><i>卫衣</i></a>
+						<!-- .'('.$v['count'].')' -->
+						<a id="cate463" href="proCategoryList.html" alt="套装"><i>套装</i></a>
+						<!-- .'('.$v['count'].')' -->
+						<a style="float:right" href = "index.html" alt="返回上一级">返回上一级 </a> </div>
+					<div class="mbshop_searchMore">更多</div>
+				</div>
+				<!-- category over -->
+		<!-- filter vertical -->
+		<div id="mainSearch">
+			<div class="mbshop_searchItem">
+				<span id="price">价格</span>
+				<div class="mbshop_searchItemContent">
+					<a href="proCategoryList.html">
+						<i>0-139</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>140-209</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>200-299</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>300-399</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>400-599</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>600-2399</i>
+					</a>
+					<!-- 单独筛选项的内容 -->
+					<!-- 价格区间 -->
+					<div class="new_mbshop_pricequjian">
+						<input type="text" id="start_price" value="">
+						<b> - </b>
+						<input type="text" id="end_price" value="">
+						<input type="hidden" id="maxPrice" value="1999.0">
+						<input type="hidden" id="minPrice" value="38.0">
+						<input type="button" class="mbshop_ie_btn_s_f_sure bantouming" name="btn_sure" value="确认">
+						<span id="notice-msg" style="width:auto;padding-left:10px;border:0;color:red"></span>
+					</div>
+				</div>
+				<div class="mbshop_searchMore">更多</div>
+			</div>
+			<div class="mbshop_searchItem">
+				<span id="brand">品牌</span>
+				<div class="mbshop_searchItemContent">
+					<a href="proCategoryList.html">
+						<i>Metersbonwe</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>ME＆CITY</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>MANGO</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>GAROSU</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>Cheap Monday</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>艾丽欣</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>TYAKASHA</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>ONISIGNAL</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>Miffy</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>5 preview</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>adidas</i>
+					</a>
+					<a href="proCategoryList.html">
+						<i>KAMO卡末</i>
+					</a>
+					<!-- 单独筛选项的内容 -->
+				</div>
+				<div class="mbshop_searchMore">更多</div>
+			</div>
+			<div class="mbshop_searchItem">
+				<span id="97">性别</span>
+				<div class="mbshop_searchItemContent">
+					<a href="proCategoryList.html">
+						<i>女款</i>
+					</a>
+					<!-- 单独筛选项的内容 -->
+				</div>
+				<div class="mbshop_searchMore">更多</div>
+			</div>
+			<!-- filter vertical over -->
+		</div>
+		<!-- filter horizontal -->
+		<div class="mbshop_searchItemshuxing">
+			<!-- 遍历开始 -->
+			<!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+			<!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+			<span id="color">颜色</span>
+			<div class="mbshop_new_searchItemOption">
+				<a class="mbshop_new_searchItemOption_menu"><i>
+	            	全部颜色	            </i><em></em></a>
+				<div class="mbshop_new_searchItemOption_box">
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_03"></b>棕色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_11"></b>蓝色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_06"></b>白色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_05"></b>灰色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_09"></b>红色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_13"></b>黑色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_12"></b>黄色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_02"></b>杏色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_10"></b>绿色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_07"></b>紫色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_04"></b>橙色系</a>
+					<a href="proCategoryList.html">
+						<b class="newbgcolorblock_01"></b>卡其系</a>
+					<a class="mbshop_new_searchItemOption_all" href="proCategoryList.html">全部颜色</a>
+				</div>
+			</div>
+			<!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+			<span id="3">场合</span>
+			<div class="mbshop_new_searchItemOption">
+				<a class="mbshop_new_searchItemOption_menu"><i>
+	            	全部场合	            </i><em></em></a>
+				<div class="mbshop_new_searchItemOption_box">
+					<a href="proCategoryList.html">
+                	休闲</a>
+					<a href="proCategoryList.html">
+                	都市</a>
+					<a href="proCategoryList.html">
+                	欧美</a>
+					<a href="proCategoryList.html">
+                	简约</a>
+					<a href="proCategoryList.html">
+                	潮流</a>
+					<a href="proCategoryList.html">
+                	通勤</a>
+					<a href="proCategoryList.html">
+                	日韩</a>
+					<a href="proCategoryList.html">
+                	街头</a>
+					<a href="proCategoryList.html">
+                	校园</a>
+					<a href="proCategoryList.html">
+                	商务</a>
+					<a href="proCategoryList.html">
+                	摇滚</a>
+					<a href="proCategoryList.html">
+                	度假</a>
+					<a href="proCategoryList.html">
+                	复古</a>
+					<a href="proCategoryList.html">
+                	中性</a>
+					<a href="proCategoryList.html">
+                	民俗</a>
+					<a href="proCategoryList.html">
+                	户外</a>
+					<a href="proCategoryList.html">
+                	运动</a>
+					<a href="proCategoryList.html">
+                	情侣</a>
+					<a href="proCategoryList.html">
+                	甜美</a>
+					<a href="proCategoryList.html">
+                	清新</a>
+					<a href="proCategoryList.html">
+                	派对</a>
+					<a href="proCategoryList.html">
+                	家居</a>
+					<a class="mbshop_new_searchItemOption_all" href="proCategoryList.html">全部场合</a>
+				</div>
+			</div>
+			<!-- 尺寸只有3级分类以上显示，年龄在2级分类以上显示 -->
+			<span id="6">面料/材质</span>
+			<div class="mbshop_new_searchItemOption">
+				<a class="mbshop_new_searchItemOption_menu"><i>
+	            	全部面料/材质</i><em></em>
+				</a>
+				<div class="mbshop_new_searchItemOption_box">
+					<a href="proCategoryList.html">
+                	针织</a>
+					<a href="proCategoryList.html">
+                	棉</a>
+					<a href="proCategoryList.html">
+                	化纤</a>
+					<a href="proCategoryList.html">
+                	牛仔</a>
+					<a href="proCategoryList.html">
+                	毛线</a>
+					<a href="proCategoryList.html">
+                	毛条</a>
+					<a href="proCategoryList.html">
+                	(其它,在选购热点填写)</a>
+					<a href="proCategoryList.html">
+                	麻</a>
+					<a href="proCategoryList.html">
+                	几皮绒</a>
+					<a href="proCategoryList.html">
+                	吸湿快干</a>
+					<a href="proCategoryList.html">
+                	太空棉</a>
+					<a href="proCategoryList.html">
+                	呢料</a>
+					<a href="proCategoryList.html">
+                	莱卡</a>
+					<a href="proCategoryList.html">
+                	PU</a>
+					<a href="proCategoryList.html">
+                	羊毛</a>
+					<a href="proCategoryList.html">
+                	网眼</a>
+					<a href="proCategoryList.html">
+                	牛津纺</a>
+					<a href="proCategoryList.html">
+                	青年布</a>
+					<a href="proCategoryList.html">
+                	真皮</a>
+					<a class="mbshop_new_searchItemOption_all" href="proCategoryList.html">全部面料/材质</a>
+				</div>
+			</div>
+			<!-- 遍历结束 -->
+		</div>
+	</div>
+	</div>
+	<!-- <div class="mbshop_searchBtnUpDown">展开</div> -->
+	<div style = "clear: both;width:100%; height:0px"></div>
+	<!--销量-->
+	<div class="mbshop_pdFilter">
+		<div class="mbshop_pdFilterItem">
+			<a class="mbshop_pdFilterClick" href="#" alt="默认">默 认</a>
+			<a class="mbshop_pdFilterUp" href="#" alt="上架时间">上架时间</a>			
+			<a class="mbshop_pdFilterUp" href="#" alt="销量">销量</a>
+			<a href="#" alt="折扣">折扣</a>
+			<a href="#" alt="价格">价格</a> 
+		</div>
+		<div class="mbshop_pdPaginationTop">
+			<div class="mbshop_pdPaginationAct">
+				<b>1/19</b>页   &nbsp;共
+				<b>&nbsp;757&nbsp;</b>个商品 &nbsp;  
+				<a href="javascript:void(0)" class = "bantouming">下一页</a>         
+			</div>
+	        <div class="mbshop_pdPaginationShowPd">
+	            <label>
+	            	<input type="radio" id="style" name="searchType" value="1" checked="">
+	            	<span style="cursor:pointer">款式</span>
+	            </label>
+	            <label>
+	            	<input type="radio" id="color" name="searchType" value="2">
+	            		<span style="cursor:pointer">色系</span>
+	            </label>&nbsp;&nbsp;
+				<label>
+					<input type="checkbox" id="checkstock" checked="">
+					<span style="cursor:pointer">仅显示有货</span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!--销量结束-->
+	<!--列表页-->
+	<div class="mbshop_pdList">
+		<ul class="mbshop_listPdBox">
+			<li class="mbshop_listPdCon">
+				<a href="proDetail.html" class="mbshop_listPdImg" id="mbshop_listPdImg" target="_blank">
+					<img src="img/usercenterImg/713760_00--w_285_h_390.jpg" alt="女一款多花短箱针织套头衫">
+				</a> 
+				<span class="mbshop_listPdText fl">
+					<a href="#" target="_blank" class="mbshop_new_jx_frameText2 bantouming">Metersbonwe</a>
+					<a target="_blank" href=""><em>女人节满减</em></a>			
+				</span> 
+				<span class="mbshop_listPdText fl">
+					<a href="proDetail.html" target="_blank" class = "bantouming">女一款多花短箱针织套头衫</a>
+				</span> 
+				<span class="mbshop_listPdText">
+					<b>￥138</b>
+					<i>￥139</i>
+				</span>
+				<!-- 颜色图片切换 -->
+				<div class="mbshop_listPdColorFrame" id="mbshop_listPdColorId0">
+					<span class="mbshop_listPdColorBtnLf mbshop_disabled" title="向左" style="display: none;"></span>
+					<div class="mbshop_listPdColorScroll">
+						<div class="mbshop_listPdColor">
+								<a href="javascript:void(0)">
+									<img src="img/usercenterImg/713760_00_00--w_31_h_31.jpg" alt="">
+								</a>
+								<a href="javascript:void(0)">
+									<img src="img/usercenterImg/713760_40_00--w_31_h_31.jpg" alt="">
+								</a>
+								<a href="javascript:void(0)">
+									<img src="img/usercenterImg/713760_70_00--w_31_h_31.jpg" alt="">
+								</a>
+								<a href="javascript:void(0)">
+									<img src="img/usercenterImg/713760_90_00--w_31_h_31.jpg" alt="">
+								</a>
+						</div>
+					</div>
+					<span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--列表页结束-->
+	<!--12345下一页-->
+		<div class="mbshop_container">
+            <div class="mbshop_publicPagination">               
+				<a class="currentPage">1</a> 
+				<a href="javascript:void(0)">2</a>
+				<a href="javascript:void(0)">3</a>
+				<a href="javascript:void(0)">4</a>
+				<a href="javascript:void(0)">5</a>
+				<a href="javascript:void(0)">6</a>
+				<a href="javascript:void(0)">7</a>
+				<a href="javascript:void(0)">下一页</a>
+				<a href="javascript:void(0)">尾页</a>
+			</div>
+        </div>
+		<div id="bottom"></div>
+		<div id="footer"></div>
+	</body>
+</html>

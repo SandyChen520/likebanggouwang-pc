@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/usercenter.css"/>
+	</head>
+	<body>
+		<div class="mbshop_container">
+            <!-- leftframe -->
+            <div class="mbshop_userCenterLeftNav">
+                <a href="http://my.banggo.com">
+                    <span class="mbshop_userCenterLeftMyBanggo" title="我的邦购">
+                        <b>我的邦购</b><br>
+                        <i>My BangGo</i>
+                    </span>
+                </a>
+	            <dl>
+					<dt>交易管理</dt>
+					<dd><a href="myorder.html">我的订单</a></dd>
+					<dd><a href="#">退换货预约</a></dd>
+				    <dd><a target="_blank" href="shopbag.html">我的购物袋</a></dd>
+				</dl>
+				<dl>
+					<dt>账户管理</dt>
+					<dd><a href="javascript:void(0)">我的积分</a></dd>
+					<dd><a href="javascript:void(0)">我的打折券</a></dd>
+					<dd><a href="javascript:void(0)">我的红包</a></dd>
+					<dd><a href="javascript:void(0)">我的邦购币</a></dd>
+					<dd><a href="javascript:void(0)">活动记录</a></dd>
+				</dl>
+				<dl>
+					<dt>个人应用管理</dt>
+					<dd><a href="collect.html">我的收藏夹</a></dd>
+					<dd><a href="#">我的消息</a></dd>
+					<dd><a href="#">我的咨询</a></dd>
+				</dl>
+				<dl>
+					<dt>个人信息管理</dt>
+					<dd><a href="#">个人资料</a></dd>
+					<dd><a href="useraddress.html">收货地址</a></dd>
+					<dd><a href="updatepwd.html">修改密码</a></dd>
+					<dd><a href="#">会员等级</a></dd>
+				</dl>            
+	        </div>
+            <!-- rightframe -->
+            <div class="mbshop_userCenterRightCon">
+                <!-- top -->
+				<span class="mbshop_userCenterTop">
+				    <b>Benerer</b><i>欢迎回来！</i><a href="#">编辑个人资料 &gt;</a>
+				</span>
+				<!-- panel -->
+				<div class="mbshop_userCenterPanel">
+					<!-- 左侧 -->
+					<div class="mbshop_userCenterPlFl">
+				                <span class="mbshop_userCenterLevelImg"><img width="100" height="100" src="img/usercenterImg/level1.png" alt="会员等级"></span>
+						<ul>
+							<li>会员级别：普通用户 <em class="mbshop_userCenterLevelIco1" title="ico"></em></li>
+							<li>我的徽章：
+								<!-- 点亮样式加"_on" -->
+								<em class="mbshop_userCenterMobileIco_on" title="手机"></em>
+								<em class="mbshop_userCenterEmailIco" title="邮箱"></em>
+								<em class="mbshop_userCenterSinaWeibo" title="新浪微博"></em>
+								<em class="mbshop_userCenterQqWeibo" title="腾讯微博"></em>
+							</li>
+				            <li>未读消息：<a class="mbshop_userCenterMsg" href="#">0</a> 条</li>
+				            <li>咨询回复：<a class="mbshop_userCenterMsg" href="#">0</a> 个</li>
+						</ul>
+					</div>
+					<!-- 右侧 -->
+					<div class="mbshop_userCenterPlFr">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<th colspan="4">我的小金库</th>
+							</tr>
+							<tr>
+								<td class="text_right" width="70">邦购币余额</td>
+								<td><b>0</b></td>
+								<td class="text_right" width="70">红包</td>
+								<td><a class="mbshop_userCenterMsg" href="#">0</a> 个</td>
+							</tr>
+							<tr>
+								<td class="text_right" width="70">积分</td>
+								<td><b>20</b></td>
+								<td class="text_right" width="70">打折券</td>
+				                <td><a class="mbshop_userCenterMsg" href="#">0</a> 张</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+				<!-- orderAlert -->
+				<div class="mbshop_userCenterOrderAlert">
+					<dl>
+						<dt>订单提醒</dt>
+						<dd>
+							<span>待支付：</span>
+				            <a href="http://my.banggo.com/memberOrder?order_status=1">
+				                0            </a>
+							<span>待收货：</span>
+				            <a href="http://my.banggo.com/memberOrder?order_status=3">
+				                0            </a>
+							<!-- <span>待评价：</span>
+				            <a href="http://my.banggo.com/memberOrder?order_status=4&need_comment=0">
+				                0            </a> -->
+							<span>退货订单：</span>
+				            <a href="#">
+				                0            </a>
+				            <a class="mbshop_userCenterOrderAllView" href="#">查看全部订单 &gt;&gt;</a>
+						</dd>
+					</dl>
+				</div>
+				<!-- orderList -->
+				<div class="mbshop_userCenterOrderList">
+				    <span style="float:left;display:block;width:auto;margin:20px 0 0 22px">暂无待支付订单</span>
+				</div>
+				<!-- latestView&fav -->
+				<div class="mbshop_userCenterPdTabCon">
+					<!--tab-->
+					<div class="mbshop_userCenterPdTabList">
+						<ul class="member_view_goods_nav">
+							<li class="mbshop_userCenterPdTabOn history_lists_nav" data-type="history">最近浏览的商品</li>
+							<li class="collect_lists_nav" data-type="collect">最近收藏的商品</li>
+						</ul>
+					</div>
+					<!--box-->
+					<div class="mbshop_userCenterPdTabBox">
+						<!--最近浏览的商品-->
+						<div class="mbshop_userCenterPdTabBoxCon history_lists_container" style="display: block">
+							<div id="mbshop_userCenterPdRecArea0" class="mbshop_userCenterPdRecArea">
+								<span class="mbshop_userCenterPdRecBtn_fl mbshop_disabled" title="向左" style="display: none;"></span>
+								<div class="mbshop_userCenterPdRecAreaList"">
+									<div class="mbshop_userCenterPdRecAreaCon">
+										<ul class="history_lists_content">
+											<li class="mbshop_userCenterPdListPdCon">
+												<a href="proDetail.html" class="mbshop_userCenterPdListPdImg">
+												<img src="img/usercenterImg/818819_00--w_180_h_180.jpg" alt="女时尚收腰连衣裙"></a>
+												<p class="mbshop_userCenterPdListPdText">女时尚收腰连衣裙</p>
+												<p class="mbshop_userCenterPdListPdText">
+													<b>￥239</b>
+													<i>￥439</i>
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<span class="mbshop_userCenterPdRecBtn_fr" title="向右" style="display: none;"></span>
+							</div>
+						</div>
+						<!--最近收藏的商品-->
+						<div class="mbshop_userCenterPdTabBoxCon collect_lists_container" style="display: none">
+							<div id="mbshop_userCenterPdRecArea1" class="mbshop_userCenterPdRecArea">
+								<span class="mbshop_userCenterPdRecBtn_fl mbshop_disabled" title="向左"></span>
+								<div class="mbshop_userCenterPdRecAreaList">
+									<div class="mbshop_userCenterPdRecAreaCon">
+										<ul class="collect_lists_content">
+										</ul>
+									</div>
+								</div>
+								<span class="mbshop_userCenterPdRecBtn_fr" title="向右"></span>
+							</div>
+						</div>
+				    </div>
+				</div>
+
+				<!-- 收藏品牌 -->
+				<div class="mbshop_userCenterPdTabCon">
+					</div>
+				
+				<!-- adv -->
+				<div class="mbshop_userCenterIndexAdv">
+					
+				</div>
+
+
+ 
+            </div>
+        </div>
+	</body>
+</html>

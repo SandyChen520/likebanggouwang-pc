@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情页</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/proDetail.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.autocomplete.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-migrate-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/proDetail.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="headtop"></div>
+		<div id="header"></div>
+		<div id="con">
+			<!--所有分类导航-->
+			<div class="pD-nav">
+				<div class="pD-navlist">
+					<a href="javascript:void(0)">所有商品</a>&gt;
+					<a href="javascript:void(0)">女装</a>&gt;
+					<a href="javascript:void(0)">裙类</a>&gt;
+					<a href="javascript:void(0)">连衣裙</a>&gt;
+				</div>
+			</div>
+			<div class="pD-con">
+				<div class="pD-con-left">
+					<div class="pD-con-ltpic">
+						<div class="pD-con-ltsmall">
+							<ul>
+								<li class = "pD-con-ltsmall-click"><img src="img/usercenterImg/818819_00--w_90_h_90.jpg" alt="" /></li>
+								<li><img src="img/usercenterImg/818819_01--w_90_h_90.jpg" alt="" /></li>
+								<li><img src="img/usercenterImg/818819_02--w_90_h_90.jpg" alt="" /></li>
+								<li><img src="img/usercenterImg/818819_03--w_90_h_90.jpg" alt="" /></li>
+								<li><img src="img/usercenterImg/818819_04--w_90_h_90.jpg" alt="" /></li>
+							</ul>
+						</div>
+						<div class="pD-con-ltbig">
+							<div class="pD-conltbig-zoom">
+								<span class = "pD-bigPicMark"></span>
+								<img src="img/usercenterImg/818819_00--w_498_h_498.jpg" alt="" />
+							</div>
+							<!--放大镜-->
+							<div class="pD-conltbig-pop">
+								<img src="img/usercenterImg/818819_00--w_1000_h_1000.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="pD0con-ltshare">
+						<div class="pDcon-ltshare-text">分享到：</div>
+						<div class="pDcon-ltshare-btn">
+							<a class="pD-qzone" href="javascript:void(0)" title="分享到QQ空间"></a>
+							<a class="pD-tsina" href="javascript:void(0)" title="分享到新浪微博"></a>
+							<a class="pD-tqq" href="javascript:void(0)" title="分享到腾讯微博"></a>
+							<a class="pD-renren" href="javascript:void(0)" title="分享到人人网"></a>
+							<a class="pD-weixin" href="javascript:void(0)" title="分享到微信"></a>
+							<a class="pD-more" href="javascript:void(0)"></a>
+						</div>
+					</div>
+				</div>
+				<!--右侧-->
+				<div class="pD-con-right">
+					<div class="mbshop-detail-baseinfo">
+                		<ul>
+                    	<!--pdname-->
+                    		<li class="mbshop-detail-pdname">
+                        		<a href="javascript:void(0)">艾丽欣</a>
+                                &nbsp;<strong>女时尚收腰连衣裙</strong>                        
+                    		</li>
+                   			 <li class="mbshop_detail_pdid">商品编号：818819</li>
+                    		<!--promotion-->
+                    		 <li class="mbshop_detail_promotion">
+						   		 <dl>
+						            <dt>促销</dt>
+						            <dd>
+						                <!-- 促销活动循环开始 -->
+					                    <a class="hrefToPromotion" href="javascript:void(0)">
+					                                                满199减20 满319减50 满499减100 点击查看更多   
+					                    </a>
+						            </dd>
+						        </dl>
+						    </li>
+                    		<!--price-->
+                    		<li class="mbshop_detail_price">
+                        		<b>售价：</b><strong id="salePriceText">￥ 239 </strong>
+                            	<i>吊牌价：</i><em>￥ 439.00</em><span>5.4折</span>
+                            </li>
+                    		<li class="mbshop_detail_rebate" id="vipPriceText">
+                                <div id="noVipTextContent"> 本品不参加vip，svip折扣 </div> 
+                        		<div class="mbshop_detail_rebateRule">会员规则
+                                	<div class="mbshop_detail_rebateRule_open">
+                                		升级成为VIP会员：<br> 
+                                		一次性消费金额超过 400  元或一年累计消费金额超过 1000 元（含）<br>
+                                    	升级成为SVIP会员：<br> 
+                                    	一次性消费金额超过 800 元或一年累计消费金额超过 2000 元（含）
+                                	</div>
+                        		</div>
+                    		</li>
+                		</ul>
+            		</div>
+                    <!--color&size-->
+            		<div class="mbshop_detail_colorSizeList">
+               	 		<!-- color -->
+               			 <dl class="mbshop_detail_color_list">
+                    		<dt>颜 色：<b id="changeColorText">请选择颜色</b></dt>
+                    		<dd class="color">
+								<a href="javascript:void(0)">
+                                	<img src="img/usercenterImg/818819_99_00--w_40_h_40.jpg" alt="黑色">
+                            	</a>
+                            </dd>
+               			</dl>
+                		<!-- size -->
+               			<dl class="mbshop_detail_size_list">
+                   			<dt>尺 码：<b id="changeSizeText">请选择尺码</b></dt>
+                    		<dd class="size">
+                        		<a href="javascript:void(0)">160/84A</a>
+                        		<a href="javascript:void(0)">165/92A</a>
+                        		<a href="javascript:void(0)">170/96A</a>
+                        		<a href="javascript:void(0)">165/86A</a>
+                    		</dd>
+                		</dl>
+            		</div>
+            		<!-- num -->
+            		<div class="mbshop_detail_num">
+                		<dl>
+                    		<dt>购买数量：</dt>
+	                        <dd>
+	                            <a class="mbshop_detail_buyNum_less" title="减少">-</a>
+	                            <input class="mbshop_detail_buyNum" type="text" value="1">
+	                            <a class="mbshop_detail_buyNum_add" title="增加">+</a>  
+	                            <strong id="availableNum">（库存剩余 7 件）</strong>
+	                            <b id="availableMessage"></b>
+	                        </dd>
+                		</dl>
+                		<div class="mbshop_detail_alertclass" style="display:none">对不起，数量至少为1件。</div>
+            		</div>
+                  
+                	<!--add bag-->
+                    <div class="mbshop_detail_btn_bag">
+                        <a href="javascript:void(0)" class="mbshop_detail_btn_addcart" name="addToCart" title="加入购物袋">加入购物袋</a>
+                        <a id="collector_button" href="javascript:;" class="mbshop_detail_btn_wish" title="收藏商品"></a>
+                    </div>
+                    <div class="mbshop_detail_keywords">
+                        <li>浏览更多:</li>
+                        <!-- 循环开始 -->
+                        <li><a href="http://search.banggo.com/brand/a_a_a_AILIXIN.shtml" target="_blank">艾丽欣</a></li>
+	                    <li><a href="http://search.banggo.com/search/a_170.shtml" target="_blank">连衣裙</a></li>
+                	</div>
+					<!--加入购物袋成功弹出框-->
+					<div class="mbshop_openpop mbshop_openpop_hide"></div>
+					<div class="mbshop_addCartSuccess mbshop_openpop_hide">
+			            <!-- title -->
+			            <div class="mbshop_openpop_title">
+			                <span>提示</span>
+			                <a class="mbshop_openpop_close" href="javascript:void(0);" title="关闭"></a>
+			            </div>
+			            <!-- addSuccessFrame -->
+			            <div class="mbshop_openpop_con">
+			                <!-- buy -->
+			                <div class="mbshop_openpop_buyArea">
+			                    <span class="mbshop_openpop_addSuccess">加入购物袋成功！</span>
+			                    <span class="mbshop_openpop_btnArea">
+			                        <a class="mbshop_openpop_btnGoPay" href="shopbag.html">去结算</a>
+			                        <a class="mbshop_openpop_btnGoShop" href="javascript:void(0);">继续购物</a>
+			
+			                    </span>
+			
+			                </div>
+			                <div class="mbshop_openpop_productRecommend">
+			                   
+			                </div>
+			            </div>
+    				</div>
+    				
+				</div>
+			</div>
+			<div class="pD-main">
+				<div class="pD-main-left">
+					
+					<ul>
+						<li><img src="img/usercenterImg/pD-floor-left.png" alt="" /></li>
+					</ul>
+					
+				</div>
+				<div class="pD-main-right">
+					<div class="pD-floor">
+						<ul>
+							<li class = "pD-floor-navclick">商品详情</li>
+							<li>商品评价</li>
+							<li>咨询</li>
+							<li>购买须知</li>
+							<li>商品详情</li>
+						</ul>
+					</div>
+					<div class="pD-louceng">
+						<ul>
+							<li>
+								<img src="img/usercenterImg/pD-louceng1.png" alt="" />
+								<!--<img src="img/usercenterImg/pD-louceng12.png" alt="" />-->
+							</li>
+							<li><img src="img/usercenterImg/pD-louceng2.png" alt="" /></li>
+							<li><img src="img/usercenterImg/pD-louceng3.png" alt="" /></li>
+							<li><img src="img/usercenterImg/pD-louceng4.png" alt="" /></li>
+						</ul>
+						
+					</div>
+					<div style = "clear: both; height:1px;width:100px;overflow: hidden;"></div>
+				</div>
+				<div style = "clear: both; height:1px;width:180px;"></div>
+			</div>
+		</div>
+		<div id="bottom"></div>
+		<div id="footer"></div>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

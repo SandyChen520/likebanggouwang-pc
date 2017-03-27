@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单信息确认</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/select2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/userorder.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/select2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/location.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/userorder.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="headtop"></div>
+		<div id="header">
+			<div class = "headerlogoline-wrap">
+				<div class="headerlogowrap-top">
+					<div id="logo">
+						<a href="index.html"><img src="img/mbshop_new_logo2.png" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mbshop_flowHead">
+			<div class="mbshop_flowHeadContent">
+	            <span class="mbshop_orderFlowstep1" title="订单流程——加入购物袋->填写订单信息->成功提交订单"></span>
+	        </div>
+		</div>
+        <div class="mbshop_orderTitle">
+		         填写核对订单信息
+		</div>
+		<!--收货地址-->
+		<div class="mbshop_orderAddress">
+		    <dl>
+		        <dt>收货地址</dt>
+		        <dd>
+		            <ul>
+		            	<li class = "shengchengdizhi">
+		            		<input name="orderAddress" type="radio" class="apply_address" attr="old" value="2298201" />
+			                <span class="mbshop_orderTextStyle">er&nbsp;&nbsp;北京北京市崇文区ssd&nbsp;&nbsp;15056789087</span>
+			                <span class="mbshop_orderAddressModify"> 
+			                	<a href="javascript:void(0);" class="modify_adress">修改</a>
+			               	 	<a href="javascript:void(0);" class="deletes_address">删除</a>
+			                </span>
+		            	</li>
+		                <li id="app_new">
+		                    <input name="orderAddress" class="apply_address tanchu_newaddress" type="radio" attr="new" value="">
+		                    <span class="mbshop_orderAddressContent">使用新地址</span>
+		                </li>
+		                <div id="inner_address" style="display: none;">no</div>
+		                <!-- 填写收件人地址 -->
+		                <div class="mbshop_orderAddressAdd">
+		                    <table cellpadding="0" cellspacing="0">
+		                        <tbody><tr>
+		                            <td>收货人：</td>
+		                            <td><input type="text" name="apply_name" id="sh_name" maxlength="10"></td>
+		                        </tr>
+		                        <tr>
+		                            <td>所在地区：</td>
+		                            <td>
+		                                <select id="province" name="provice">
+		                                    <!--<option value=""> --请选择-- </option>
+                                            <option value="2">北京</option>-->
+                                    	</select>
+	                                	<select id="city" name="city">
+	                                		<!--<option value=""> --请选择-- </option>
+	                                		 <option value="3">北京市</option>-->
+	                                	</select>
+	                                	<select id="zone" name="zone">
+	                                		<!--<option value=""> --请选择-- </option>
+	                                		 <option value="4">东城区</option>
+	                                		  <option value="5">西城区</option>-->
+	                                	</select>
+		                            </td>
+		                        </tr>
+		                        <tr>
+		                            <td>详细地址：</td>
+		                            <td><input type="text" name="detail_address" id="sh_detail" maxlength="70"></td>
+		                        </tr>
+		                        <tr>
+		                            <td>手机号码：</td>
+		                            <td>
+		                                <input type="text" name="apply_mobile" id="sh_mobile" maxlength="11">
+		                                	或 固定电话：
+		                                <input type="text" name="apply_telpone" id="sh_telpone" maxlength="16">
+		                            </td>
+		                        </tr>
+		                        <tr>
+		                            <td>邮箱:</td>
+		                            <td>
+		                                <input type="text" name="apply_email" id="sh_email" maxlength="60"> 
+		                                <span>用来接收订单提醒邮件，便于您及时了解订单状态</span>
+		                            </td>
+		                        </tr>
+		                        <tr>
+		                            <td>邮编:</td>
+		                            <td>
+		                                <input type="text" name="apply_zipcode" id="sh_zipcode" maxlength="6">
+		                            </td>
+		                        </tr>
+		                        <tr>
+		                            <td>&nbsp;</td>
+		                            <td>
+		                            	<input type="hidden" name="address_id" value="" id="sh_id">
+		                            	<a class="mbshop_orderAddressConfirm bantouming" href="javascript:void(0);" title="确认信息">确定</a>
+		                            </td>
+		                        </tr>
+		                    </tbody></table>
+		                </div>
+		            </ul>
+		        </dd>
+		    </dl>
+		</div>
+		<!--支付方式-->
+		<div class="mbshop_paySort">
+		    <dl>
+		        <dt>支付方式</dt>
+		        <dd>
+		            <input name="pay_type" type="radio" checked="checked" value="1">
+		            <span class="mbshop_orderTextStyle">在线支付</span>
+		        </dd>
+		    </dl>
+		</div>
+		<!--配送方式-->
+		<div class="mbshop_deliveryMode">
+		    <dl>
+		        <dt>配送方式</dt>
+		        <dd>
+		            <input name="transport_type" type="radio" checked="checked" value="1">
+		            <span class="mbshop_orderTextStyle">快递</span>
+		        </dd>
+		    </dl>
+		</div>
+		<!--商品清单-->
+		<div class="mbshop_orderPdList">
+			<!-- 商品title -->
+			<div class="mbshop_orderPdTitle">
+			    <span class="mbshop_orderPdListText" title="商品清单">商品清单</span>
+			    <span class="mbshop_orderModifyCart" title="返回修改购物袋">
+			    	<a href="shopbag.html">返回修改购物袋 &gt;&gt;</a>
+			    </span>
+			</div>
+			<!-- 商品list -->
+			<div class="mbshop_orderPdListTable">
+			    <table cellpadding="0" cellspacing="0" border="0">
+			        <tbody>
+			        	<tr>
+				            <th class="mbshop_orderPdName">商品</th>
+				            <th>颜色/尺码</th>
+				            <th>数量</th>
+				            <th>单价</th>
+				            <th>优惠</th>
+				            <th>小计</th>
+				            <th>状态</th>
+				        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="mbshop_orderPdInfo">
+                                    <a href="proDetail.html" target="_blank"><img src="img/usercenterImg/818819_99_00--w_60_h_60.jpg" alt="女时尚收腰连衣裙"></a>
+                                    <a href="proDetail.html" target="_blank" class="mbshop_orderPdInfoText bantouming">女时尚收腰连衣裙 (818819)</a>
+                                </div>
+                            </td>
+                            <td class = "userOrderSizeColor">黑色<br>165/92A</td>
+                            <td>1</td>
+                            <td>
+                                <b class="mbshop_order_data_salePrice">￥239</b><br>
+                                <i class="mbshop_order_data_originalPrice">￥439</i>
+                            </td>
+                            <td class = "chuxiao">
+                                <b>￥0</b>
+                                <span class="mbshop_orderPdAlertText">促销</span>
+                            </td>
+                            <td>
+                                <b>￥239</b>
+                            </td>
+                            <td>
+                                <span class="mbshop_orderStockLess">库存紧张</span>
+                            </td>
+                        </tr>
+                                            
+                        <!-- 套装循环结束 -->
+    				</tbody>
+			    </table>
+			</div>
+		</div>
+		<!--发票-->
+		<div class="mbshop_invoice">
+            <span>
+                <input type="checkbox" name="mbshop_invoice" id="need_sign" value="1"> 需要发票
+            </span>
+		</div>
+		<!--可用红包-->
+		<div class="package-table-tab-warp">
+		    <div class="package-table-tab">
+		        <span>可用红包</span>
+		        <a href="javascript:void(0);" target="__blank">查看全部红包</a>
+		    </div>
+		</div>
+		<div class="tab_tab">
+		    <p class="tab_tab_01">红包金额</p>
+		    <p class="tab_tab_02">使用限制</p>
+		    <p class="tab_tab_03">适用范围</p>
+		    <p class="tab_tab_04">有效时间</p>
+		</div>
+		<div class="mbshop_banggobi">
+	    	<div id="package_list" class="package-list">
+	    		<table class="package-table" cellpadding="0" cellspacing="0" border="0">
+	            	<tbody>
+	            		<tr>
+	            			<td colspan="5" style="text-align: center;">
+	            				<span>您暂无可用红包</span>
+	            			</td>
+	            		</tr>
+	        		</tbody>
+	    		</table>
+			</div>
+		    <div class="mbshop_banggobiContent">
+		        <span style="width:100%; line-height:30px;">有红包兑换码？绑定红包。</span>
+		        <span>输入红包兑换码:</span>
+		        <span><input type="text" value="" id="package_no" readonly="readonly"></span>
+		        <span>输入验证码:</span>
+		        <span><input type="text" value="" id="verify" readonly="readonly"></span>
+		        <span><img alt="点击换图" title="点击换图" class="verify_code" style="cursor:pointer" id="yw0" src="img/usercenterImg/56d8340c84bd8.png"></span>
+		        <a href="javascript:void(0);" title="确认绑定" id="bind_package" class="mbshop_banggobiUse bantouming">确认绑定</a>
+		        <span id="package_error"></span>
+		        <span class="mbshop_banggobiText"></span>
+		    </div>
+		</div>
+		<!--使用积分抵用部分-->
+		<div class="mbshop_banggobi">
+		    <!-- 邦购币title -->
+		    <span class="mbshop_banggobiTitle">使用积分抵用部分现金</span>
+		    <!-- 邦购币content -->
+		    <div class="mbshop_banggobiContent">
+		        <span class="mbshop_banggobiText">本次使用</span>
+		        <span><input type="text" value="" id="order_point" name="order_point" readonly="readonly"></span>
+		        <span class="mbshop_banggobiText">个积分</span>
+		        <span class="mbshop_banggobiText clear">您当前积分： <b id="max-user-point">20</b>，本单最高可用积分 <b id="max-order-point">0</b></span>
+		    </div>
+		</div>
+		<!--使用邦购币抵部分现金-->
+		<div class="mbshop_banggobi">
+		    <!-- 邦购币title -->
+		    <span class="mbshop_banggobiTitle">使用邦购币抵用部分现金</span>
+		    <!-- 邦购币content -->
+		    <div class="mbshop_banggobiContent">
+		        <span class="mbshop_banggobiText">本次使用</span>
+		        <span><input type="text" value="" id="bcoin" readonly="readonly"></span>
+		        <span class="mbshop_banggobiText">个邦购币</span>
+		        <a href="javascript:;" title="使用" id="use_coin" class="mbshop_banggobiUse bantouming">使用</a>
+		        <span class="mbshop_banggobiText clear">您当前可用余额 <b>¥0</b><!--，本单可用 <b>¥3</b>--></span>
+		    </div>
+		</div>
+		<!--总价计算及提交订单-->
+		<div class="mbshop_orderPriceCountAndSubmit">
+            <span class="mbshop_orderPrice">
+                <p>商品金额：<b>¥<span id="goods_total">219</span></b> + 运费：
+                	<b>¥<span id="freight">0</span></b> - 
+                	<b>红包：¥<span id="hongbao">0</span></b> - 
+                	<b>积分：¥<span id="point_price">0</span></b> - 邦购币：
+                	<b>¥<span id="mcoin">0</span></b>
+                </p><br>
+                <i>应付总额：</i><br>
+                ¥<strong id="payment">219.00</strong><br>
+                <input type="hidden" name="token" value="">
+                <a href="javascript:void(0);" class="mbshop_orderSubmitBtn bantouming" id="submit_order">提交订单</a>
+            </span>
+		</div>
+		<div id="bottom"></div>
+		<div id="footer"></div>
+	</body>
+</html>

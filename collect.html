@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的收藏</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/collect.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.autocomplete.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-migrate-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.banner.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/collect.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="headtop"></div>
+		<div id="header"></div>
+		<div class="mbshop_container">
+            <!-- leftframe -->
+            <div class="mbshop_userCenterLeftNav">
+                <a href="index.html">
+                    <span class="mbshop_userCenterLeftMyBanggo" title="我的邦购">
+                        <b>我的邦购</b><br>
+                        <i>My BangGo</i>
+                    </span>
+                </a>
+	            <dl>
+					<dt>交易管理</dt>
+					<dd><a href="myorder.html">我的订单</a></dd>
+					<dd><a href="#">退换货预约</a></dd>
+				    <dd><a target="_blank" href="shopbag.html">我的购物袋</a></dd>
+				</dl>
+				<dl>
+					<dt>账户管理</dt>
+					<dd><a href="javascript:void(0)">我的积分</a></dd>
+					<dd><a href="javascript:void(0)">我的打折券</a></dd>
+					<dd><a href="javascript:void(0)">我的红包</a></dd>
+					<dd><a href="javascript:void(0)">我的邦购币</a></dd>
+					<dd><a href="javascript:void(0)">活动记录</a></dd>
+				</dl>
+				<dl>
+					<dt>个人应用管理</dt>
+					<dd><a href="javascript:void(0)" style = "color: #f00">我的收藏夹</a></dd>
+					<dd><a href="#">我的消息</a></dd>
+					<dd><a href="#">我的咨询</a></dd>
+				</dl>
+				<dl>
+					<dt>个人信息管理</dt>
+					<dd><a href="#">个人资料</a></dd>
+					<dd><a href="useraddress.html">收货地址</a></dd>
+					<dd><a href="updatepwd.html">修改密码</a></dd>
+					<dd><a href="#">会员等级</a></dd>
+				</dl>            
+	        </div>
+        	<!--右-->
+        	<div class="mbshop_userCenterRightCon">
+                 <div class="mbshop_userCenterRightCon">
+				    <!-- top -->
+				    <span class="mbshop_userCenterTopText">我的收藏</span>
+				    <!-- scoreList -->
+				    <div class="mbshop_userCenterMyFavTabCon">
+				        <!--tab-->
+				        <div class="mbshop_userCenterListTabList">
+				            <ul>
+				                <li class="mbshop_userCenterListTabOn" id="productCollect" data-type="product">收藏的商品</li>
+				                <li id="brandCollect" data-type="brand">收藏的品牌</li>
+				            </ul>
+				        </div>
+				        <!--box-->
+				        <div class="mbshop_userCenterListTabBox">
+				            <!--收藏的商品-->
+				            <div class="mbshop_userCenterListTabBoxFrame">
+				                <div class="mbshop_userCenterListTabBoxCon">
+				                    <div class="mbshop_userCenterFavProduct">
+				                         <ul>
+				                            <li>
+				                                <span class="mbshop_userCenter_favpd_box">
+				                                    <!-- 已失效标签 -->
+				                                    <div class="mbshop_userCenter_favpd_layout" style="display:none">
+				                                        <em>已失效</em>
+				                                        <div class="mbshop_userCenter_favpd_mask"></div>
+				                                    </div>
+				                                    <a href="proCategoryList.html" target="_blank"><img src="img/usercenterImg/722069_00--w_235_h_325.jpg" alt="男情侣款后背印花衬衫"></a>
+				                                </span>
+				                                <span class="mbshop_userCenter_favpd_name">
+				                                    <a href="proDetail.html" target="_blank" class = "bantouming">男情侣款后背印花衬衫</a>
+				                                </span>
+				                                <span class="mbshop_userCenter_favpd_price">
+				                                    <b>139.00</b>
+				                                </span>
+				                                <span class="mbshop_userCenter_favpd_btn_end">
+				                                    <a class="mbshop_userCenter_favpd_btn_01 bantouming" href="proCategoryList.html" target="_blank">去看看</a>
+				                                    <a class="mbshop_userCenter_favpd_btn_02" id="MemberCollector" data="5201219" href="javascript:void(0);">删 除</a>
+				                                </span>
+				                            </li>
+				                             
+				                        </ul>
+				                     </div>
+				                </div>
+				                <!-- 分页 -->
+				            </div>
+				            <!--收藏的品牌-->
+				            <div class="mbshop_userCenterListTabBoxFrame1">
+				                                暂无数据
+				            </div>
+				        </div>
+				    </div>
+				    <!--推荐收藏-->
+				        <div class="mbshop_userCenterPdTabList" id="collectTitle">
+				        <ul class="member_view_goods_nav">
+				            <li class="mbshop_userCenterPdTabOn">推荐收藏</li>
+				        </ul>
+				    </div>
+				    <div class="mbshop_userCenterPdTabBox" id="collectCtn">
+				        <div class="mbshop_userCenterPdTabBoxCon history_lists_container" style="display: block">
+				            <div id="mbshop_userCenterPdRecArea0" class="mbshop_userCenterPdRecArea">
+				                <span class="mbshop_userCenterPdRecBtn_fl mbshop_disabled" title="向左"></span>
+				                <div class="mbshop_userCenterPdRecAreaList" id="mbshop_collectRecArea2">
+				                    <div class="mbshop_userCenterPdRecAreaCon">
+				                        <ul>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/601169_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男纯色休闲牛津纺长袖衬衫（线上专供） </p>
+				                        			<p class="mbshop_userCenterPdListPdText">
+				                        				<b>￥89.00</b>
+				                        				<i>￥299.00</i>
+				                        			</p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/722074_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男翻领全身印花长袖衬衫 </p>
+				                        			<p class="mbshop_userCenterPdListPdText">
+				                        				<b>￥119.00</b>
+				                        				<i>￥199.00</i>
+				                        			</p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/601151_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男学院风法兰绒磨毛格子长袖衬衣（线上专供） </p>
+				                        			<p class="mbshop_userCenterPdListPdText">
+				                        				<b>￥79.00</b>
+				                        				<i>￥299.00</i>
+				                        			</p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/722072_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男休闲门襟绣花长袖衬衫 </p>
+				                        			<p class="mbshop_userCenterPdListPdText">
+				                        				<b>￥119.00</b>
+				                        				<i>￥199.00</i>
+				                        			</p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/601225_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男抓绒布印花长袖衬衫（线上专供） </p>
+				                        			<p class="mbshop_userCenterPdListPdText">
+				                        				<b>￥89.00</b>
+				                        				<i>￥279.00</i>
+				                        			</p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/722005_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男青年布胸前印条衬衫（周杰伦同款） </p>
+				                        			<p class="mbshop_userCenterPdListPdText">
+				                        				<b>￥149.00</b>
+				                        				<i>￥169.00</i>
+				                        			</p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="http://img5.ibanggo.com/sources/images/goods/MB/722004/722004_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男MTEE功夫熊猫迷彩拼接衬衫 </p>
+				                        			<p class="mbshop_userCenterPdListPdText">
+				                        				<b>￥199.00</b>
+				                        				<i>￥239.00</i>
+				                        			</p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/601224_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男基本灯芯绒长袖衬衫（线上专供） </p>
+				                        			<p class="mbshop_userCenterPdListPdText">
+				                        				<b>￥89.00</b>
+				                        				<i>￥219.00</i>
+				                        			</p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/722037_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男MTEE功夫熊猫黑金棒球衬衫 </p>
+				                        			<p class="mbshop_userCenterPdListPdText"><b>￥239.00</b><i>￥299.00</i></p>
+				                        		</a>
+				                        	</li>
+				                        	<li class="mbshop_userCenterPdListPdCon">
+				                        		<a href="proCategoryList.html" class="mbshop_userCenterPdListPdImg">
+				                        			<img src="img/usercenterImg/601336_00--w_228_h_228.jpg" alt="">
+				                        			<p class="mbshop_userCenterPdListPdText"> 男格子长袖衬衫（线上专供） </p>
+				                        			<p class="mbshop_userCenterPdListPdText"><b>￥125.00</b><i>￥279.00</i></p>
+				                        		</a>
+				                        	</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				                <span class="mbshop_userCenterPdRecBtn_fr" title="向右"></span>
+				            </div>
+				        </div>
+				    </div>
+				    </div>
+            </div>
+		</div>
+		<div id="bottom"></div>
+		<div id="footer"></div>
+	</body>
+</html>

@@ -1,0 +1,252 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+body {
+    font-family: "微软雅黑","宋体",verdana, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    margin: 0;
+}
+a{
+	color:#000;
+	text-decoration: none;
+}
+ul,li,dl{
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*面包屑导航*/
+.mbshop_breadNav {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+    height: auto;
+    font: normal 12px "微软雅黑","宋体",verdana;
+    padding: 10px 0 15px 0;
+    clear: both;
+}
+.mbshop_breadNavLink {
+    margin: 0 auto;
+    overflow: hidden;
+	width: auto;
+    height: auto;
+    font: normal 12px "微软雅黑","宋体",verdana;
+    padding: 0 0 15px 0;
+    padding: 0;
+}
+.mbshop_breadNavLink a {
+    font: normal 12px "微软雅黑","宋体",verdana;
+}
+.mbshop_container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+    height:auto;
+}
+.mbshop_articleNav {
+    width: 200px;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_articleHead {
+    width: 188px;
+    border: 1px #ccc solid;
+    padding: 10px 0 5px 10px;
+    border-bottom: 0;
+    font: bold 14px "微软雅黑","黑体","宋体",verdana;
+}
+.mbshop_articleNavList {
+    width: 198px;
+    border: 1px #ccc solid;
+    border-top: 0;
+    padding-bottom: 10px;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_articleNavList dl {
+    width: 188px;
+    float: right;
+}
+.mbshop_articleNavList dl dt {
+    width: 178px;
+    font: bold 12px "微软雅黑","黑体","宋体",verdana;
+    padding: 5px 0 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    background-color: #eee;
+    color: #333;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_articleNavList dl dd {
+    width: 178px;
+    padding: 5px 0 0 10px;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_articleNavList dl dd a {
+    width: auto;
+    float: left;
+    display: block;
+    color: #444;
+}
+.mbshop_articleNavList dl dd a:hover {
+    color: #f00;
+}
+.mbshop_articleFrame {
+    width: 983px;
+    margin-left: 15px;
+    border: 1px #ccc solid;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_articleFrameCon {
+    width: 963px;
+    margin-left: 10px;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_articleFrameCon h1 {
+    width: 100%;
+    padding: 10px 0;
+    font: bold 14px "微软雅黑","黑体","宋体",verdana;
+    color: #000;
+    border-bottom: 1px #ccc solid;
+}
+.mbshop_articleFrameCon .mbshop_articleContent {
+    width: 100%;
+    overflow-x: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin: 15px 0;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_articleContent p {
+    font-weight: normal;
+    line-height: 150%;
+}
+.mbshop_articleFrameCon .mbshop_articlePage {
+    width: 100%;
+    padding: 15px 0;
+    border-top: 1px #ccc dashed;
+    float: left;
+    height:auto;
+}
+.mbshop_articleFrameCon .mbshop_articlePage span {
+    width: auto;
+    float: right;
+}
+.mbshop_articleFrameCon .mbshop_articlePage span a:hover, .mbshop_articleContent a:hover{
+   color:#666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,254 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: bold;
+}
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: 500;
+}
+img {
+    border: 0;
+    display: block;
+}
+.mbshop_order_success_info dl, .mbshop_order_success_info dt, .mbshop_order_success_info dd {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    float: left;
+    display: block;
+}
+input[type="text"], input[type="password"] {
+    border: 1px solid #b0b0b0;
+    padding: 2px 5px;
+}
+button, input, textarea {
+    outline: none;
+}
+body {
+    font-family: "微软雅黑","宋体",verdana, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    margin: 0;
+    color:#000;
+}
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: middle;
+}
+input, select, textarea {
+    font-size: 100%;
+}
+button, input, textarea {
+    outline: none;
+}
+.headerlogowrap-bottom{
+	display: none;
+}
+#header{
+	height:74px;
+	border:none;
+}
+#header .headerlogoline-wrap{
+	height:74px;
+}
+#header .headerlogoline-wrap .search-nav{
+	display: none;
+}
+#header .headerlogoline-wrap .headershop{
+	display: none;
+}
+/*提交订单*/
+
+.mbshop_flowHead {
+    width: 100%;
+    height: auto;
+    float: none;
+    display: block;
+    border-bottom: 1px #ccc solid;
+    background-color: #fff;
+}
+.mbshop_flowHeadContent {
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+    height: 27px;
+    position: relative;
+    z-index: 1;
+    clear: both;
+}
+.mbshop_orderFlowstep1 {
+    width: 398px;
+    height: 30px;
+    padding: 0;
+    right: 0;
+    display: block;
+    background-image: url("../img/usercenterImg/Veo_mbshop_spirit_pic.png");
+    background-repeat: no-repeat;
+    background-position: 0 -1637px;
+    position: absolute;
+    z-index: 1;
+}
+.mbshop_orderTitle {
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1165px !important;
+    font: bold 14px "微软雅黑","宋体",verdana;
+    margin-top: 20px;
+    padding: 5px 0 5px 35px;
+    background-image: url("../img/usercenterImg/Veo_mbshop_spirit_pic.png");
+    background-position: 0 -588px;
+    background-repeat: no-repeat;
+}
+.mbshop_order_success_info {
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px #ccc solid;
+    width: 1198px;
+    padding: 60px 0;
+}
+
+.mbshop_order_success_info dl {
+    width: 800px;
+    height: auto;
+    margin-left: 199px;
+    padding: 0;
+    float: left;
+}
+.mbshop_order_success_info dl dt {
+    width: 100px;
+    height: 100px;
+    float: left;
+    display: block;
+}
+.mbshop_order_icon_success_flat {
+    width: 60px;
+    height: 50px;
+    float: left;
+    display: block;
+    background-image: url("../img/usercenterImg/Veo_mbshop_spirit_pic.png");
+    background-position: 0 -671px;
+    background-repeat: no-repeat;
+}
+
+.mbshop_order_success_info dl dd {
+    width: 700px;
+    font: normal 14px "微软雅黑","宋体",verdana;
+    padding-bottom: 20px;
+}
+.mbshop_order_success_info dl .mbshop_order_info_tt {
+    font: bold 16px "微软雅黑","宋体",verdana;
+}
+.mbshop_order_success_info dl dd a {
+    font: normal 16px "微软雅黑","宋体",verdana;
+    text-decoration: underline;
+}
+.mbshop_order_success_info dl dd .mbshop_order_PayPrice {
+    font: bold 16px "微软雅黑","宋体",verdana;
+    color: #f00;
+}
+.mbshop_order_info_ss {
+    width: 694px;
+    height: auto;
+    margin: 0 auto;
+    color: #fe2430;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-left: 94px;
+}
+.mbshop_order_payNotice {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    font: normal 14px "微软雅黑","宋体",verdana;
+    margin-top: 15px;
+}
+.mbshop_order_bankList {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.mbshop_order_bankList h4 {
+    font: bold 14px "微软雅黑","宋体",verdana;
+    width: 100%;
+}
+.mbshop_order_payPlatform {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.mbshop_order_payPlatform a {
+    margin: 10px 30px 0 0;
+    float: left;
+    display: block;
+}
+.mbshop_order_payFinished {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    font: normal 14px "微软雅黑","宋体",verdana;
+    padding-bottom: 20px;
+}
+.mbshop_order_payFinished em {
+    float: left;
+    display: block;
+    font: normal 14px "微软雅黑","宋体",verdana;
+    color: #999;
+}
+.mbshop_order_payFinished a {
+    width: auto;
+    float: left;
+    margin-left: 20px;
+    font: normal 14px "微软雅黑","宋体",verdana;
+    text-decoration: underline;
+    color: #999;
+}
+.mbshop_order_bankListCon {
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_order_bankListCon a {
+    width: auto;
+    margin: 10px 30px 0 0;
+    float: left;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

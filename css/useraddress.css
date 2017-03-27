@@ -1,0 +1,234 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+body {
+    font-family: "微软雅黑","黑体","宋体",verdana,"Helvetica Neue", Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    margin: 0;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    display: block;
+}
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+.mbshop_container {
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px
+}
+/*左边*/
+.mbshop_userCenterLeftNav {
+    width: 138px;
+    border: 1px #ccc solid;
+    padding: 0 20px 15px 20px;
+    margin-right: 20px;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterLeftNav .mbshop_userCenterLeftMyBanggo {
+    width: 100%;
+    padding: 10px 0;
+    float: left;
+    display: block;
+    border-bottom: 1px #ccc solid;
+}
+.mbshop_userCenterLeftNav .mbshop_userCenterLeftMyBanggo b {
+    font: bold 14px "微软雅黑","黑体","宋体",verdana;
+}
+.mbshop_userCenterLeftNav .mbshop_userCenterLeftMyBanggo i {
+    font: normal 12px "微软雅黑","黑体","宋体",verdana !important;
+    color: #999;
+}
+.mbshop_userCenterLeftNav dl {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterLeftNav dl dt {
+    width: 100%;
+    font: bold 12px "微软雅黑","黑体","宋体",verdana;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterLeftNav dl dd {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterLeftNav dl dd a {
+    font: normal 12px "微软雅黑","黑体","宋体",verdana;
+    color: #666;
+}
+.mbshop_userCenterLeftNav dl dd a:hover {
+    color: #f00;
+}
+/*右边*/
+.mbshop_userCenterRightCon {
+    width: 1000px;
+    position: relative;
+    height: auto;
+    float: left;
+    display: block;
+}
+.mbshop_userCenterTopText {
+    padding-top: 10px;
+    width: 100%;
+    float: left;
+    display: block;
+    font: bold 12px "微软雅黑","黑体","宋体",verdana;
+    padding-bottom: 10px;
+    border-bottom: 1px #ccc solid;
+}
+.Csuccess {
+    background-color: #449d44;
+    border: 1px #398439 solid;
+    color: #fff;
+    margin-top: 12px;
+    padding: 5px;
+    width: 988px;
+    height: auto;
+    float: left;
+    display: none;
+}
+.btn_close {
+    border: 1px solid #d6e9c6;
+    background-color: #dff0d8;
+    font: bold 12px arial;
+    color: #468847;
+    padding: 0 5px 1px 5px !important;
+    float: right;
+    cursor: pointer;
+}
+.mbshop_userCenterInfoLayout {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    height: auto;
+    float: left;
+}
+.mbshop_userCenterAddressInfoText {
+    font: normal 12px "微软雅黑","黑体","宋体",verdana;
+    margin-top: 10px;
+    float: left;
+    display: block;
+}
+.mbshop_btn_addBtn {
+    width: auto;
+    height: auto;
+    background-color: #f8584f;
+    font: normal 12px "微软雅黑","黑体","宋体",verdana;
+    right: 0;
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 5px;
+    position: absolute;
+}
+.mbshop_userCenterMyNewsList {
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    float: left;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tbody{
+	vertical-align: middle;
+}
+table tbody th, table tbody td {
+    text-align: center;
+    padding: 6px;
+    color: #333;
+    border: 1px solid #c9c9c9;
+}
+table th:first-child, table td:first-child {
+    text-align: left;
+}
+
+.AddressIndex{
+	display: none;
+}
+/*新增地址窗口*/
+.mbshop_userCenterTopInfo {
+    float: left;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 0 10px 10px;
+    width: 988px;
+    background-color: #F7F7F7;
+    border: 1px #ccc solid;
+    font: normal 12px "微软雅黑","黑体","宋体",verdana;
+    line-height: 150%;
+    height: auto;
+}
+.mbshop_userCenterConFrame {
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    float: left;
+}
+
+.mbshop_userCenterConFrame form {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+.mbshop_userCenterConFrame table tr td {
+    text-align: left;
+    border: 0;
+}
+.mbshop_userCenterConFrame table tr td:first-child {
+    text-align: right;
+}
+.mbshop_userCenterConFrame input[type="text"], input[type="password"] {
+    border: 1px solid #b0b0b0;
+    padding: 2px 5px;
+}
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: middle;
+}
+.mbshop_userCenterBtnConfirm {
+    width: auto;
+    height: auto;
+    background-color: #f8584f;
+    font: normal 12px "微软雅黑","黑体","宋体",verdana;
+    float: left;
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 2px;
+}

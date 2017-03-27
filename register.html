@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>会员注册</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--注册公用头部-->
+		<div class="topWrap">
+			<div class="logo">
+				<h1><a href="">邦购</a></h1>
+			</div>
+		</div>
+		<!--注册界面开始-->
+		<div class="register">
+			<div class="register-top">
+				<a id="mobile" class="actyle" href="#">手机注册</a>
+				<a id="card" href="#">MVP卡激活</a>
+			</div>
+			<div class="register-con">
+				<div class="register-con-left">
+					<!--手机注册步骤一开始-->
+					<div class="mobile1">
+						<div class="registercon-left-title">
+							第一步：填写手机账户信息（以下内容均为必填）
+						</div>
+						<form action="" name = "mobile-form" id = "mobile-form" method="post">
+							<div class="mobile-user item">
+								<div class="username fL">用户名：</div>
+								<div class="user-text fL">
+									<!--用户名文本输入框-->
+									<input type="text" id="mobileusertext" name = "mobileusertext" class = "input1 fL"/>
+									<span class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+									<span id="mobile-user-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="mobile-phone item">
+								<div class="phonename fL">手机号码：</div>
+								<div class="phone-text fL">
+									<!--手机号文本输入框-->
+									<input type="text" id="mobilephonetext" name="mobilephonetext" class = "input1 fL"/>
+									<span class="tips">请输入您的手机号码。</span>
+									<span id="mobile-phone-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="moblie-code item">
+								<div class="codename fL" id="login_type_yzm">验证码：</div>
+								<div class="code-text fL">
+									<!--验证码文本输入框-->
+									<input id="vcode" name="vcode" class="input1 fL" type="text"/>
+									<span id="mySpan"> 
+										<img align="middle" id="img1" class="change_img" src="img/usercenterImg/loginCode.do"> <a href="javascript:void(0)">换一张</a>
+									</span>
+									<span id="mobile-code-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="sendjihuoma item">
+								<a href="#" class = "btn-sendjihuoma"><span>发送激活码</span></a>
+							</div>
+						</form>
+					</div>
+					<!--手机注册步骤二开始-->
+					<div class="mobile2">
+						<div class="registercon-left-title">
+							第二步：填写获得的激活码
+						</div>
+						<form action="" name = "mobile-form1" id = "mobile-form2" method="post">
+							<div class="mobile-user item">
+								<div class="username fL">用户名：</div>
+								<div class="user-text fL">
+									<!--用户名文本输入框-->
+									<input type="text" id="mobileusertext2" name = "mobileusertext2" class = "input1 fL"/>
+									<span class="tips"></span>
+									<span id="mobile-user-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="mobile-phone item">
+								<div class="phonename fL">手机号码：</div>
+								<div class="phone-text fL">
+									<!--手机号文本输入框-->
+									<input type="text" id="mobilephonetext2" name="mobilephonetext2" class = "input1 fL"/>
+									<span class="tips"></span>
+									<span id="mobile-phone-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="mobile-pwd item">
+								<div class="pwdname fL">登录密码：</div>
+								<div class="pwd-text fL">
+									<!--登录密码文本输入框-->
+									<input type="password" id="mobilepwdtext" name="mobilepwdtext" class = "input1 fL"/>
+									<span class="tips">6-16个字符，请使用字母加数字或符号的组合密码。</span>
+									<span id="mobile-pwd-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="mobile-rpwd item">
+								<div class="rpwdname fL">确认密码：</div>
+								<div class="rpwd-text fL">
+									<!--确认密码文本输入框-->
+									<input type="password" id="mobilerpwdtext" name="mobilerpwdtext" class = "input1 fL"/>
+									<span class="tips">请再次输入登录密码。</span>
+									<span id="mobile-rpwd-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="mobile-jihuo item">
+								<div class="jihuoname fL">激活码：</div>
+								<div class="rpwd-text fL">
+									<!--激活码文本输入框-->
+									<input type="text" id="mobilejihuotext" name="mobilejihuotext" class = "input1 fL"/>
+									<span class="tips">请输入您的激活码。</span>
+									<span id="mobile-jihuo-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="acceptandregister item">
+								<a href="#" class = "btn-acceptandregister"><span>同意以下协议并注册</span></a>
+								<div class="postphonecode">
+									<span id = "notRecieve">手机未收到验证码，</span>
+									<a class = "rsendCode" href="javascript:void(0)">重新发送</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="agree"><a href="javascript:void(0)">《邦购用户协议》</a></div>
+							</div>
+						</form>
+					</div>
+					
+					<div class="card1">
+						<div class="registercon-left-title">
+							第一步：填写MVP卡账户信息（以下内容均为必填）
+						</div>
+						<form action="" name = "card-form" id = "card-form1" method="post">
+							<div class="card-mvpname item">
+								<div class="mvpname fL">MVP卡号：</div>
+								<div class="mvpname-text fL">
+									<!--mvp文本输入框-->
+									<input type="text" id="cardmvpnametext1" name="cardmvpnametext1" class = "input1 fL"/>
+									<span class="tips">请输入MVP卡卡号，卡号由13为数字组成。</span>
+									<span id="card-mvpname-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="card-mvppwd item">
+								<div class="mvppwd fL">mvp卡密码：</div>
+								<div class="mvppwd-text fL">
+									<!--mvp文本输入框-->
+									<input type="text" id="cardmvpnametext1" name="cardmvpnametext1" class = "input1 fL"/>
+									<span class="tips">请输入MVP卡密码。</span>
+									<span id="card-mvpname-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="card-user item">
+								<div class="username fL">用户名：</div>
+								<div class="user-text fL">
+									<!--用户名文本输入框-->
+									<input type="text" id="cardusertext1" name = "cardusertext1" class = "input1 fL"/>
+									<span class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+									<span id="card-user-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="card-pwd item">
+								<div class="pwdname fL">登录密码：</div>
+								<div class="pwd-text fL">
+									<!--登录密码文本输入框-->
+									<input type="password" id="cardpwdtext1" name="cardpwdtext1" class = "input1 fL"/>
+									<span class="tips">6-16个字符，请使用字母加数字或符号的组合密码。</span>
+									<span id="card-pwd-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="card-rpwd item">
+								<div class="rpwdname fL">确认密码：</div>
+								<div class="rpwd-text fL">
+									<!--确认密码文本输入框-->
+									<input type="password" id="cardrpwdtext1" name="cardrpwdtext1" class = "input1 fL"/>
+									<span class="tips">请再次输入登录密码。</span>
+									<span id="card-rpwd-message" class = "errorinfo">&nbsp;</span>
+								</div>
+							</div>
+							<div class="acceptandregister item">
+								<a href="#" class = "btn-acceptandregister"><span>同意以下协议并注册</span></a>
+							</div>
+							<div class="item">
+								<div class="agree"><a href="javascript:void(0)">《邦购用户协议》</a></div>
+							</div>
+						</form>
+					
+					</div>
+					
+				</div>
+				
+				<div class="register-con-right">
+					<div class="register-con-rightbg">
+						<h3>邦购网欢迎您</h3>
+						<p>
+							欢迎注册成为邦购网会员，在这里您可以享受最贴心快捷的购物服务，我们的宗旨是让每一位顾客都得到最大满意~~~美特斯邦威，不走寻常路!^_^
+						</p>
+					</div>
+				</div>
+				<div style="clear:both; height:1px;"></div>
+			</div>
+			
+			<div class="register-bottom">
+				美特斯邦威集团网站：
+				<a href="#">美特斯邦威</a>|
+				<a href="#">ME&CITY</a>|
+				<a href="#">CH'IN祺</a>|
+				<a href="#">邦购网</a>
+			</div>
+		</div>
+	<!--注册成功-->
+		<div class="RG_mbox">
+			<!--普通注册步骤二开始-->
+			<div class="RG_sbox2">
+				<div class="RG_title">第二步：注册帐号成功</div>
+				<div class="glsuccess">
+					<div class="suctips">恭喜您注册成功！</div>
+					<div class="content">您登录邦购的用户名为：<span class="Lfwb">Benerer </span>，您随时可使用此用户名享受便宜又放心的购物乐趣。</div>
+					
+					<a class="btn_goShopping" href="index.html"><span>立即去购物</span></a>
+					<div class="hr">&nbsp;</div>
+					<div class="usercheck">
+						<h5>请完成帐户安全验证</h5>
+						<p>验证手机和邮箱可保护您的账户安全，帮助您快速找回密码，并可接收订单处理等信息。</p>
+						<div class="Lovh">
+							<a href="http://my.banggo.com/memberInfo/checkEmail" class="checkmail">立刻去验证邮箱&gt;&gt;</a>
+							<a href="http://my.banggo.com/memberInfo/checkMobile" class="checkphone">立刻去验证手机&gt;&gt;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--普通注册步骤二结束-->
+			<!--注册页面公用，右侧内容开始-->
+			
+			<div class="register-con-right">
+					<div class="register-con-rightbg">
+						<h3>邦购网欢迎您</h3>
+						<p>
+							欢迎注册成为邦购网会员，在这里您可以享受最贴心快捷的购物服务，我们的宗旨是让每一位顾客都得到最大满意~~~美特斯邦威，不走寻常路!^_^
+						</p>
+					</div>
+			</div>
+			<!--注册页面公用，右侧内容结束-->
+		</div>
+	
+	
+	
+	
+	</body>
+</html>
